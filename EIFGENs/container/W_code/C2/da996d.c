@@ -25,19 +25,19 @@ static const EIF_TYPE_INDEX egt_12_996 [] = {0xFF01,995,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_996 [] = {0xFF01,960,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_996 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_996 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_996 [] = {0xFF01,247,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_17_996 [] = {0xFF01,247,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_18_996 [] = {0xFF01,247,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_19_996 [] = {0xFF01,247,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_20_996 [] = {0xFF01,316,217,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_996 [] = {0xFF01,263,0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_996 [] = {0xFF01,263,0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_18_996 [] = {0xFF01,263,0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_19_996 [] = {0xFF01,263,0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_20_996 [] = {0xFF01,351,217,0xFFFF};
 static const EIF_TYPE_INDEX egt_21_996 [] = {0xFF01,165,0xFFFF};
 static const EIF_TYPE_INDEX egt_22_996 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_23_996 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_24_996 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_25_996 [] = {0xFF01,0xFFF9,2,185,0xFF01,231,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_26_996 [] = {0xFF01,366,0xFF01,986,217,0xFFFF};
-static const EIF_TYPE_INDEX egt_27_996 [] = {247,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_28_996 [] = {247,0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_26_996 [] = {0xFF01,337,0xFF01,986,217,0xFFFF};
+static const EIF_TYPE_INDEX egt_27_996 [] = {263,0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_28_996 [] = {263,0xFF01,231,0xFFFF};
 
 
 static const struct desc_info desc_996[] = {
@@ -226,7 +226,7 @@ void Init996(void)
 	IDSC(desc_996 + 32, 390, 995);
 	IDSC(desc_996 + 36, 378, 995);
 	IDSC(desc_996 + 50, 386, 995);
-	IDSC(desc_996 + 58, 125, 995);
+	IDSC(desc_996 + 58, 127, 995);
 	IDSC(desc_996 + 60, 373, 995);
 	IDSC(desc_996 + 72, 374, 995);
 	IDSC(desc_996 + 79, 389, 995);

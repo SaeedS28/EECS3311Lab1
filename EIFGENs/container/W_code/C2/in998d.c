@@ -100,7 +100,7 @@ void Init998(void)
 	IDSC(desc_998, 0, 997);
 	IDSC(desc_998 + 1, 1, 997);
 	IDSC(desc_998 + 32, 387, 997);
-	IDSC(desc_998 + 57, 209, 997);
+	IDSC(desc_998 + 57, 210, 997);
 }
 
 

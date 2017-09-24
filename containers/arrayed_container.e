@@ -33,7 +33,7 @@ feature -- Commands
 	assign_at (i: INTEGER; s: STRING)
 			-- Change the value at position 'i' to 's'.
 		require
-			valid_index: True -- Your task
+		valid_index (i)
 		do
 			imp [i] := s
 			-- Uncomment this to produce a wrong implementation
@@ -54,9 +54,9 @@ feature -- Commands
 	insert_at (i: INTEGER; s: STRING)
 			-- Insert value 's' into index 'i'.
 		require
-			valid_index: True -- Your task
+		valid_index (i)
 		do
-			-- Your task
+			imp.put (s, i)
 		ensure
 			size_changed: True -- Your task
 			inserted_at_i: True -- Your task
@@ -67,9 +67,9 @@ feature -- Commands
 	delete_at (i: INTEGER)
 			-- Delete element stored at index 'i'.
 		require
-			valid_index: True -- Your task
+		valid_index (i)
 		do
-			-- Your task
+			--
 		ensure
 			size_changed: True -- Your task
 			left_half_the_same: True -- Your task
@@ -79,21 +79,21 @@ feature -- Commands
 	insert_last (s: STRING)
 			-- Insert 's' as the last element of the container.
 		do
-			-- Your task
+		  imp.put (s, imp.upper)
 		ensure
-			size_changed: True -- Your task
-			last_inserted: True -- Your task
+			size_changed: (imp.count >= old imp.count)
+			last_inserted: (imp.at (imp.upper)= s)
 			others_unchanged: True -- Your task
 		end
 
 	remove_first
 			-- Remove first element from the container.
 		require
-			not_empty: True -- Your task
+		--	not_empty: imp.is_empty
 		do
 			-- Your task
 		ensure
-			size_changed: True -- Your task
+			size_changed: (imp.count <= old imp.count)
 			others_unchanged: True -- Your task
 		end
 
@@ -114,8 +114,7 @@ feature -- Queries
 
 	valid_index (i: INTEGER): BOOLEAN
 			-- Is 'i' a valid index of current container?
-local
-	j: 0
+
 	do
 		Result := imp.valid_index(i)
 
@@ -127,23 +126,25 @@ local
 			Result = (imp.lower <= i and  i <= imp.upper)
 
 			no_elements_changed:
-			across
-			old	imp.lower|..| old imp.upper as j
-			all
-			Result = (imp.at (j.item) = old imp.at (j.item))
-			end
+--			across
+--			old	imp.lower|..| old imp.upper as j
+--			all
+--			Result = (imp.at (j.item) = old imp.at (j.item))
+--			end
+--working on this one
+
 		end
 
 	get_at (i: INTEGER): STRING
 			-- Return the element stored at index 'i'.
 		require
-			valid_index: -- Your task
+		valid_index (i)
 		do
-			-- Your task
-			Result := ""
+		Result := imp.item (i)
+
 		ensure
-			size_unchanged: True -- Your task
-			result_correct: True -- Your task
+			size_unchanged: (imp.count = old imp.count)
+			result_correct: (imp.item (i)= imp.item (i))
 			no_elements_changed: True -- Your task
 		end
 
@@ -151,3 +152,5 @@ invariant
 	-- Size of container and size of implementation array always match.
 	consistency: imp.count = count
 end
+
+--complete no elements changed

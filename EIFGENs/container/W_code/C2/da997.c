@@ -663,8 +663,8 @@ void F997_7685 (EIF_REFERENCE Current)
 	RTDBGEAA(996, Current, 13918);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(Current, 1, 0xF80003BD, 0, 0); /* loc1 */
-	tr1 = RTLN(eif_new_type(957, 0x01).id);
+	RTDBGAL(Current, 1, 0xF80003BE, 0, 0); /* loc1 */
+	tr1 = RTLN(eif_new_type(958, 0x01).id);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(32, Dtype(tr1)))(tr1);
 	RTNHOOK(1,1);
 	loc1 = (EIF_REFERENCE) RTCCL(tr1);
@@ -752,8 +752,8 @@ void F997_7686 (EIF_REFERENCE Current)
 	RTDBGEAA(996, Current, 13919);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(Current, 1, 0xF80003BD, 0, 0); /* loc1 */
-	tr1 = RTLN(eif_new_type(957, 0x01).id);
+	RTDBGAL(Current, 1, 0xF80003BE, 0, 0); /* loc1 */
+	tr1 = RTLN(eif_new_type(958, 0x01).id);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(4913, Dtype(tr1)))(tr1);
 	RTNHOOK(1,1);
 	loc1 = (EIF_REFERENCE) RTCCL(tr1);

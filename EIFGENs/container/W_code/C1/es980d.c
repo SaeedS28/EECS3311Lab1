@@ -26,7 +26,7 @@ static const EIF_TYPE_INDEX egt_13_980 [] = {0xFF01,51,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_980 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_980 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_16_980 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_17_980 [] = {0xFF01,255,0xFF01,0xFFF9,0,185,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_980 [] = {0xFF01,257,0xFF01,0xFFF9,0,185,0xFFFF};
 static const EIF_TYPE_INDEX egt_18_980 [] = {0xFF01,231,0xFFFF};
 
 
@@ -141,9 +141,9 @@ void Init980(void)
 {
 	IDSC(desc_980, 0, 979);
 	IDSC(desc_980 + 1, 1, 979);
-	IDSC(desc_980 + 32, 189, 979);
-	IDSC(desc_980 + 65, 230, 979);
-	IDSC(desc_980 + 66, 101, 979);
+	IDSC(desc_980 + 32, 190, 979);
+	IDSC(desc_980 + 65, 229, 979);
+	IDSC(desc_980 + 66, 103, 979);
 	IDSC(desc_980 + 91, 364, 979);
 	IDSC(desc_980 + 103, 363, 979);
 }
