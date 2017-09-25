@@ -9,3 +9,5 @@ https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.nenie.org%2Feiffel%2Fflatshort%2
 https://learn.lassonde.yorku.ca/course/view.php?id=529
 
 https://www.infor.uva.es/~felix/prii/sintaxis.html
+
+http://smarteiffel.loria.fr/libraries/api/lib.d/storage.d/loadpath.se.d/collection.d/ARRAY/ANY.html#remove_first
