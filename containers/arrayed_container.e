@@ -67,11 +67,11 @@ feature -- Commands
 			imp[j.item] ~ (old imp.twin)[j.item]
 			end
 			right_half_the_same: true
---			across
---				imp.[i+1]|..| (old imp.twin.[i-1]) as j
---					all
---					imp.[j.item] ~ (old imp.twin.[j.item])
---					end
+            across
+           i |..| (old imp.twin).upper as j
+            all
+             imp[j.item+1]~(old imp.twin)[j.item]
+            end
 		end
 
 	delete_at (i: INTEGER)
@@ -91,9 +91,14 @@ feature -- Commands
 		do
 		  imp.force (s, imp.upper+1)
 		ensure
-			size_changed: (imp.count >= old imp.count)
-			last_inserted: (imp.at (imp.upper)= s)
-			others_unchanged: True -- Your task
+			size_changed: (imp.count >= old imp.twin.count)
+			last_inserted: (imp.at (imp.upper) ~ s)
+			others_unchanged:
+			across
+					old imp.twin.lower |..| old imp.twin.upper	as j
+					all
+						imp[j.item]~ (old imp.twin)[j.item]
+					end
 		end
 
 	remove_first
@@ -103,8 +108,13 @@ feature -- Commands
 		do
 			imp.remove_head (1)
 		ensure
-			size_changed: (imp.count <= old imp.count)
-			others_unchanged: True -- Your task
+			size_changed: (imp.count <= old imp.twin.count)
+			others_unchanged:
+			across
+			old imp.twin.lower  |..| old imp.twin.upper as j
+			all
+				imp[j.item]~ (old imp.twin)[j.item]
+			end
 		end
 
 feature -- Queries
@@ -130,18 +140,17 @@ feature -- Queries
 
 		ensure
 			size_unchanged:
-			Result = (imp.count = old imp.count)
+			Result = (imp.count = old imp.twin.count)
 
 			result_correct:
 			Result = (imp.lower <= i and  i <= imp.upper)
 
 			no_elements_changed:
---			across
---			old	imp.lower|..| old imp.upper as j
---			all
---			Result = (imp.at (j.item) = old imp.at (j.item))
---			end
---working on this one
+			across
+			old imp.twin.lower |..| old imp.twin.upper	as j
+			all
+				imp[j.item]~ (old imp.twin)[j.item]
+			end
 
 		end
 
@@ -153,9 +162,14 @@ feature -- Queries
 		Result := imp.item (i)
 
 		ensure
-			size_unchanged: (imp.count = old imp.count)
-			result_correct: (imp.item (i)= imp.item (i))
-			no_elements_changed: True -- Your task
+			size_unchanged:Result = (imp.count = old imp.twin.count)
+			result_correct: Result = (imp.item (i) = imp.item (i))
+			no_elements_changed:
+			across
+			old imp.twin.lower |..| old imp.twin.upper	as j
+			all
+				imp[j.item]~ (old imp.twin)[j.item]
+			end
 		end
 
 invariant
