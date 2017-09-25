@@ -26,7 +26,7 @@ test_thing : BOOLEAN
 		local
 			imp : ARRAY[STRING]
 		do
-			comment("T1: ")
+			comment("T1: Test make procedure ")
 	--		create imp.make(1,5)
 			Result := TRUE
 			end
@@ -36,7 +36,7 @@ test_thing2 : BOOLEAN
 		local
 			imp : ARRAY[STRING]
 		do
-			comment("T2: ")
+			comment("T2: test assign at follows post conditions ")
 	--		create imp.make(1,5)
 			Result := TRUE
 			end
@@ -45,7 +45,7 @@ test_thing3 : BOOLEAN
 		local
 			imp : ARRAY[STRING]
 		do
-			comment("T3: ")
+			comment("T3: test assign at follows pre conditions ")
 	--		create imp.make(1,5)
 			Result := TRUE
 			end
@@ -54,7 +54,7 @@ test_thing4 : BOOLEAN
 		local
 			imp : ARRAY[STRING]
 		do
-			comment("T4: ")
+			comment("T4:Test insert at post condition ")
 --		create imp.make(1,5)
 			Result := TRUE
 			end
@@ -63,7 +63,7 @@ test_thing5 : BOOLEAN
 		local
 			imp : ARRAY[STRING]
 		do
-			comment("T5: ")
+			comment("T5: test delete at's post condition ")
 	--		create imp.make(1,5)
 			Result := TRUE
 			end
@@ -72,8 +72,17 @@ test_thing5 : BOOLEAN
 		local
 			imp : ARRAY[STRING]
 		do
-			comment("T6: ")
+			comment("T6: test Insert last post condition ")
 	--		create imp.make(1,5)
 			Result := TRUE
 			end
+			test_thing7 : BOOLEAN
+			-- What the test does
+			local
+				imp : ARRAY[STRING]
+			do
+				comment("T7: Testing remove first postcondition ")
+		--		create imp.make(1,5)
+				Result := TRUE
+				end
 end

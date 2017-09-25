@@ -80,11 +80,21 @@ feature -- Commands
 		require
 		valid_index (i)
 		do
-			--imp.
+
 		ensure
 			size_changed: imp.count = (old imp.twin.count-1)
-			left_half_the_same: True -- Your task
-			right_half_the_same: True -- Your task
+--			left_half_the_same:
+--			across
+--			imp.lower |..| (i-1) as j
+--			all
+--			imp[j.item] ~ (old imp.twin)[j.item]
+--			end
+--			right_half_the_same:
+--			across
+--         	 i  |..| ((old imp.twin).upper-1) as j
+--            all
+--             imp[j.item+1]~(old imp.twin)[j.item]
+--            end
 		end
 
 	insert_last (s: STRING)
