@@ -56,12 +56,22 @@ feature -- Commands
 		require
 		valid_index (i)
 		do
-			imp.put (s, i)
+			imp.force (s, i)
 		ensure
-			size_changed: True -- Your task
-			inserted_at_i: True -- Your task
-			left_half_the_same: True -- Your task
-			right_half_the_same: True -- Your task
+			size_changed: imp.count = (old imp.twin.count+1)
+			inserted_at_i: imp.at (i) ~ s
+			left_half_the_same:
+			across
+			imp.lower |..| (i-1) as j
+			all
+			imp[j.item] ~ (old imp.twin)[j.item]
+			end
+			right_half_the_same: true
+--			across
+--				imp.[i+1]|..| (old imp.twin.[i-1]) as j
+--					all
+--					imp.[j.item] ~ (old imp.twin.[j.item])
+--					end
 		end
 
 	delete_at (i: INTEGER)
@@ -69,9 +79,9 @@ feature -- Commands
 		require
 		valid_index (i)
 		do
-			--
+			--imp.
 		ensure
-			size_changed: True -- Your task
+			size_changed: imp.count = (old imp.twin.count-1)
 			left_half_the_same: True -- Your task
 			right_half_the_same: True -- Your task
 		end
@@ -79,7 +89,7 @@ feature -- Commands
 	insert_last (s: STRING)
 			-- Insert 's' as the last element of the container.
 		do
-		  imp.put (s, imp.upper)
+		  imp.force (s, imp.upper+1)
 		ensure
 			size_changed: (imp.count >= old imp.count)
 			last_inserted: (imp.at (imp.upper)= s)
@@ -89,9 +99,9 @@ feature -- Commands
 	remove_first
 			-- Remove first element from the container.
 		require
-		--	not_empty: imp.is_empty
+			--not empty
 		do
-			-- Your task
+			imp.remove_head (1)
 		ensure
 			size_changed: (imp.count <= old imp.count)
 			others_unchanged: True -- Your task

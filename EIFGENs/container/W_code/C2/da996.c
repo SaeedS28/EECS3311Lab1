@@ -96,7 +96,7 @@ void F996_7650 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTGC;
 	RTDBGEAA(995, Current, 13896);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,337,0xFF01,986,217,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,366,0xFF01,986,217,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -115,7 +115,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 5414, 0xF8000151, 0); /* code */
+	RTDBGAA(Current, dtype, 5414, 0xF800016E, 0); /* code */
 	RTAR(Current, arg1);
 	*(EIF_REFERENCE *)(Current + RTWA(5414, dtype)) = (EIF_REFERENCE) RTCCL(arg1);
 	if (RTAL & CK_ENSURE) {
@@ -1011,7 +1011,7 @@ void F996_7666 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTGC;
 	RTDBGEAA(995, Current, 13912);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,263,0xFF01,231,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,247,0xFF01,231,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -1030,7 +1030,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 5416, 0xF8000107, 0); /* days */
+	RTDBGAA(Current, dtype, 5416, 0xF80000F7, 0); /* days */
 	RTAR(Current, arg1);
 	*(EIF_REFERENCE *)(Current + RTWA(5416, dtype)) = (EIF_REFERENCE) RTCCL(arg1);
 	if (RTAL & CK_ENSURE) {
@@ -1087,7 +1087,7 @@ void F996_7667 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTGC;
 	RTDBGEAA(995, Current, 13913);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,263,0xFF01,231,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,247,0xFF01,231,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -1106,7 +1106,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 5415, 0xF8000107, 0); /* months */
+	RTDBGAA(Current, dtype, 5415, 0xF80000F7, 0); /* months */
 	RTAR(Current, arg1);
 	*(EIF_REFERENCE *)(Current + RTWA(5415, dtype)) = (EIF_REFERENCE) RTCCL(arg1);
 	if (RTAL & CK_ENSURE) {
@@ -1303,7 +1303,7 @@ body:;
 	loc7 = (EIF_REFERENCE) RTCCL(tr1);
 	RTHOOK(4);
 	RTDBGAL(Current, 9, 0x10000000, 1, 0); /* loc9 */
-	tr1 = RTLN(eif_new_type(958, 0x01).id);
+	tr1 = RTLN(eif_new_type(957, 0x01).id);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(32, Dtype(tr1)))(tr1);
 	RTNHOOK(4,1);
 	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(4916, "year_now", tr1))(tr1)).it_i4);

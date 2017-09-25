@@ -79,7 +79,7 @@ void Init986(void)
 {
 	IDSC(desc_986, 0, 985);
 	IDSC(desc_986 + 1, 1, 985);
-	IDSC(desc_986 + 32, 210, 985);
+	IDSC(desc_986 + 32, 209, 985);
 	IDSC(desc_986 + 36, 298, 985);
 	IDSC(desc_986 + 39, 372, 985);
 }

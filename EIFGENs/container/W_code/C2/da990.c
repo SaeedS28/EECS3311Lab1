@@ -132,7 +132,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 5291, 0xF8000151, 0); /* value */
+	RTDBGAA(Current, dtype, 5291, 0xF800016E, 0); /* value */
 	tr1 = RTLNSMART(RTWCT(5291, dtype, Dftype(Current)).id);
 	ui4_1 = ((EIF_INTEGER_32) 20L);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3011, Dtype(tr1)))(tr1, ui4_1x);
@@ -149,14 +149,14 @@ body:;
 	RTNHOOK(4,1);
 	loc4 = (EIF_REFERENCE) RTCCL(tr1);
 	RTHOOK(5);
-	RTDBGAA(Current, dtype, 5310, 0xF8000107, 0); /* days */
+	RTDBGAA(Current, dtype, 5310, 0xF80000F7, 0); /* days */
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5110, "days_text", loc4))(loc4)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(5,1);
 	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(17, "twin", tr1))(tr1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTAR(Current, tr2);
 	*(EIF_REFERENCE *)(Current + RTWA(5310, dtype)) = (EIF_REFERENCE) RTCCL(tr2);
 	RTHOOK(6);
-	RTDBGAA(Current, dtype, 5311, 0xF8000107, 0); /* months */
+	RTDBGAA(Current, dtype, 5311, 0xF80000F7, 0); /* months */
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5111, "months_text", loc4))(loc4)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(6,1);
 	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(17, "twin", tr1))(tr1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
@@ -238,7 +238,7 @@ body:;
 	}
 	RTHOOK(23);
 	RTDBGAA(Current, dtype, 5293, 0x10000000, 1); /* base_century */
-	tr1 = RTLN(eif_new_type(958, 0x01).id);
+	tr1 = RTLN(eif_new_type(957, 0x01).id);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(32, Dtype(tr1)))(tr1);
 	RTNHOOK(23,1);
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(4916, "year_now", tr1))(tr1)).it_i4);
@@ -2070,7 +2070,7 @@ label_1:
 	}
 body:;
 	RTHOOK(4);
-	RTDBGAL(Current, 2, 0xF8000151, 0, 0); /* loc2 */
+	RTDBGAL(Current, 2, 0xF800016E, 0, 0); /* loc2 */
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5291, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(4,1);
 	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(17, "twin", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
@@ -2245,7 +2245,7 @@ body:;
 		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(4713, "remove_tail", arg1))(arg1, ui4_1x);
 	}
 	RTHOOK(31);
-	RTDBGAA(Current, dtype, 5291, 0xF8000151, 0); /* value */
+	RTDBGAA(Current, dtype, 5291, 0xF800016E, 0); /* value */
 	RTAR(Current, loc2);
 	*(EIF_REFERENCE *)(Current + RTWA(5291, dtype)) = (EIF_REFERENCE) RTCCL(loc2);
 	if (RTAL & CK_ENSURE) {
@@ -2362,7 +2362,7 @@ label_1:
 	}
 body:;
 	RTHOOK(4);
-	RTDBGAL(Current, 2, 0xF8000151, 0, 0); /* loc2 */
+	RTDBGAL(Current, 2, 0xF800016E, 0, 0); /* loc2 */
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5291, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(4,1);
 	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(17, "twin", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
@@ -2537,7 +2537,7 @@ body:;
 		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(4713, "remove_tail", arg1))(arg1, ui4_1x);
 	}
 	RTHOOK(31);
-	RTDBGAA(Current, dtype, 5291, 0xF8000151, 0); /* value */
+	RTDBGAA(Current, dtype, 5291, 0xF800016E, 0); /* value */
 	RTAR(Current, loc2);
 	*(EIF_REFERENCE *)(Current + RTWA(5291, dtype)) = (EIF_REFERENCE) RTCCL(loc2);
 	if (RTAL & CK_ENSURE) {

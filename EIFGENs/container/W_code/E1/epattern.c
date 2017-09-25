@@ -6,8 +6,8 @@
 extern "C" {
 #endif
 
-static EIF_TYPED_VALUE toi282(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi282 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi281(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi281 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -23,8 +23,8 @@ static EIF_TYPED_VALUE toi282 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return *it;
 }
 
-static void toc282(fnptr);
-static void toc282 (fnptr ptr)
+static void toc281(fnptr);
+static void toc281 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -44,8 +44,8 @@ static void toc282 (fnptr ptr)
 	}
 }
 
-static EIF_TYPED_VALUE toi287(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi287 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi285(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi285 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -61,8 +61,8 @@ static EIF_TYPED_VALUE toi287 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return *it;
 }
 
-static void toc287(fnptr);
-static void toc287 (fnptr ptr)
+static void toc285(fnptr);
+static void toc285 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -165,8 +165,8 @@ static void toc34 (fnptr ptr)
 	}
 }
 
-static EIF_TYPED_VALUE toi357(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi357 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static EIF_TYPED_VALUE toi354(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi354 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -184,8 +184,8 @@ static EIF_TYPED_VALUE toi357 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return *it;
 }
 
-static void toc357(fnptr);
-static void toc357 (fnptr ptr)
+static void toc354(fnptr);
+static void toc354 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -851,8 +851,8 @@ static void toc30 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4,*arg5,*arg6);
 }
 
-static EIF_TYPED_VALUE toi415(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi415 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi417(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi417 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -865,8 +865,8 @@ static EIF_TYPED_VALUE toi415 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc415(fnptr);
-static void toc415 (fnptr ptr)
+static void toc417(fnptr);
+static void toc417 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -1016,8 +1016,8 @@ static void toc344 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static void toi277(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi277 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi269(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi269 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -1035,8 +1035,8 @@ static void toi277 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc277(fnptr);
-static void toc277 (fnptr ptr)
+static void toc269(fnptr);
+static void toc269 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -1213,36 +1213,6 @@ static void toc377 (fnptr ptr)
 	}
 }
 
-static EIF_TYPED_VALUE toi429(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi429 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
-{
-	GTCX
-	EIF_TYPED_VALUE *it;
-	*iget() = arg1;
-	it = iget();
-	it->type = SK_REF;
-	it->it_ref = Current;
-
-	xinterp(IC, 2);
-	return * opop();
-}
-
-static void toc429(fnptr);
-static void toc429 (fnptr ptr)
-{
-	GTCX
-	EIF_REFERENCE Current;
-	EIF_TYPED_VALUE result;
-	EIF_TYPED_VALUE *it;
-	EIF_TYPED_VALUE *arg1;
-	Current = opop()->it_ref;
-	
-	arg1 = opop();
-	result = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) ptr)(Current,*arg1);
-	it = iget();
-	*it = result;
-}
-
 static void toi126(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
 static void toi126 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
 {
@@ -1275,8 +1245,8 @@ static void toc126 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static void toi295(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi295 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi292(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi292 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -1293,8 +1263,8 @@ static void toi295 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc295(fnptr);
-static void toc295 (fnptr ptr)
+static void toc292(fnptr);
+static void toc292 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -1311,8 +1281,8 @@ static void toc295 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi428(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi428 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi429(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi429 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -1325,8 +1295,8 @@ static EIF_TYPED_VALUE toi428 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc428(fnptr);
-static void toc428 (fnptr ptr)
+static void toc429(fnptr);
+static void toc429 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -1341,8 +1311,8 @@ static void toc428 (fnptr ptr)
 	*it = result;
 }
 
-static void toi279(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi279 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi271(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi271 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -1361,8 +1331,8 @@ static void toi279 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc279(fnptr);
-static void toc279 (fnptr ptr)
+static void toc271(fnptr);
+static void toc271 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -1590,8 +1560,8 @@ static void toc124 (fnptr ptr)
 	}
 }
 
-static void toi346(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi346 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
+static void toi345(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi345 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -1608,8 +1578,8 @@ static void toi346 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 4);
 }
 
-static void toc346(fnptr);
-static void toc346 (fnptr ptr)
+static void toc345(fnptr);
+static void toc345 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -1659,8 +1629,8 @@ static void toc470 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi327(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi327 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
+static EIF_TYPED_VALUE toi328(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi328 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -1678,8 +1648,8 @@ static EIF_TYPED_VALUE toi327 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return * opop();
 }
 
-static void toc327(fnptr);
-static void toc327 (fnptr ptr)
+static void toc328(fnptr);
+static void toc328 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -1698,8 +1668,8 @@ static void toc327 (fnptr ptr)
 	*it = result;
 }
 
-static void toi296(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi296 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi291(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi291 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -1717,8 +1687,8 @@ static void toi296 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc296(fnptr);
-static void toc296 (fnptr ptr)
+static void toc291(fnptr);
+static void toc291 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -1815,8 +1785,8 @@ static void toc129 (fnptr ptr)
 	*it = result;
 }
 
-static void toi272(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi272 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi275(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi275 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -1835,8 +1805,8 @@ static void toi272 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc272(fnptr);
-static void toc272 (fnptr ptr)
+static void toc275(fnptr);
+static void toc275 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -2037,8 +2007,8 @@ static void toc7 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi414(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi414 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi415(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi415 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -2051,8 +2021,8 @@ static EIF_TYPED_VALUE toi414 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc414(fnptr);
-static void toc414 (fnptr ptr)
+static void toc415(fnptr);
+static void toc415 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -2067,8 +2037,8 @@ static void toc414 (fnptr ptr)
 	*it = result;
 }
 
-static void toi299(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi299 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi298(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi298 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -2086,8 +2056,8 @@ static void toi299 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc299(fnptr);
-static void toc299 (fnptr ptr)
+static void toc298(fnptr);
+static void toc298 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -2194,8 +2164,8 @@ static void toc237 (fnptr ptr)
 	}
 }
 
-static void toi269(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi269 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi266(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi266 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -2214,8 +2184,8 @@ static void toi269 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc269(fnptr);
-static void toc269 (fnptr ptr)
+static void toc266(fnptr);
+static void toc266 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -2232,8 +2202,8 @@ static void toc269 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi332(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi332 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
+static EIF_TYPED_VALUE toi331(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi331 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -2251,8 +2221,8 @@ static EIF_TYPED_VALUE toi332 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return * opop();
 }
 
-static void toc332(fnptr);
-static void toc332 (fnptr ptr)
+static void toc331(fnptr);
+static void toc331 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -2439,8 +2409,8 @@ static void toc374 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static void toi316(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi316 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi318(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi318 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -2460,8 +2430,8 @@ static void toi316 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc316(fnptr);
-static void toc316 (fnptr ptr)
+static void toc318(fnptr);
+static void toc318 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -2582,8 +2552,8 @@ static void toc351 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static void toi278(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi278 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi277(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi277 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -2602,8 +2572,8 @@ static void toi278 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc278(fnptr);
-static void toc278 (fnptr ptr)
+static void toc277(fnptr);
+static void toc277 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -2620,13 +2590,13 @@ static void toc278 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi404(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi404 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi405(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi405 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_REAL_64* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_POINTER* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -2635,8 +2605,8 @@ static EIF_TYPED_VALUE toi404 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc404(fnptr);
-static void toc404 (fnptr ptr)
+static void toc405(fnptr);
+static void toc405 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -2857,8 +2827,8 @@ static void toc205 (fnptr ptr)
 	*it = result;
 }
 
-static void toi293(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi293 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi300(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi300 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -2876,8 +2846,8 @@ static void toi293 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc293(fnptr);
-static void toc293 (fnptr ptr)
+static void toc300(fnptr);
+static void toc300 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -2995,8 +2965,8 @@ static void toc333 (fnptr ptr)
 	*it = result;
 }
 
-static void toi268(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi268 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi267(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi267 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -3015,8 +2985,8 @@ static void toi268 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc268(fnptr);
-static void toc268 (fnptr ptr)
+static void toc267(fnptr);
+static void toc267 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -3567,7 +3537,7 @@ static EIF_TYPED_VALUE toi407 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_CHARACTER_32* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_64* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -3592,8 +3562,8 @@ static void toc407 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi422(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi422 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi414(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi414 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -3606,8 +3576,8 @@ static EIF_TYPED_VALUE toi422 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc422(fnptr);
-static void toc422 (fnptr ptr)
+static void toc414(fnptr);
+static void toc414 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -3787,7 +3757,7 @@ static EIF_TYPED_VALUE toi413 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_POINTER* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_8* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -3812,8 +3782,8 @@ static void toc413 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi419(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi419 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi418(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi418 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -3826,8 +3796,8 @@ static EIF_TYPED_VALUE toi419 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc419(fnptr);
-static void toc419 (fnptr ptr)
+static void toc418(fnptr);
+static void toc418 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -3899,8 +3869,8 @@ static void toc420 (fnptr ptr)
 	*it = result;
 }
 
-static void toi345(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi345 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
+static void toi341(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi341 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -3917,8 +3887,8 @@ static void toi345 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 4);
 }
 
-static void toc345(fnptr);
-static void toc345 (fnptr ptr)
+static void toc341(fnptr);
+static void toc341 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -3933,8 +3903,8 @@ static void toc345 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static EIF_TYPED_VALUE toi427(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi427 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi428(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi428 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -3947,8 +3917,8 @@ static EIF_TYPED_VALUE toi427 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc427(fnptr);
-static void toc427 (fnptr ptr)
+static void toc428(fnptr);
+static void toc428 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -3963,8 +3933,8 @@ static void toc427 (fnptr ptr)
 	*it = result;
 }
 
-static void toi317(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi317 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi315(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi315 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -3984,8 +3954,8 @@ static void toi317 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc317(fnptr);
-static void toc317 (fnptr ptr)
+static void toc315(fnptr);
+static void toc315 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -4297,8 +4267,8 @@ static void toc330 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi158(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi158 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi159(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi159 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -4312,8 +4282,8 @@ static EIF_TYPED_VALUE toi158 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc158(fnptr);
-static void toc158 (fnptr ptr)
+static void toc159(fnptr);
+static void toc159 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -4411,7 +4381,7 @@ static EIF_TYPED_VALUE toi403 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_REAL_32* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_REAL_64* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -4583,8 +4553,8 @@ static void toc75 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi290(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi290 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi288(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi288 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -4600,8 +4570,8 @@ static EIF_TYPED_VALUE toi290 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return *it;
 }
 
-static void toc290(fnptr);
-static void toc290 (fnptr ptr)
+static void toc288(fnptr);
+static void toc288 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -4871,47 +4841,6 @@ static void toc362 (fnptr ptr)
 	}
 }
 
-static void toi311(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi311 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
-{
-	GTCX
-	EIF_TYPED_VALUE *it;
-	*iget() = arg1;
-	it = iget();
-	it->type = SK_INT32;it->it_i4 = ((arg2.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_32 *)arg2.it_r: arg2.it_i4;
-	it = iget();
-	it->type = SK_INT32;it->it_i4 = ((arg3.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_32 *)arg3.it_r: arg3.it_i4;
-	it = iget();
-	it->type = SK_UINT32;it->it_n4 = ((arg4.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_32 *)arg4.it_r: arg4.it_n4;
-	it = iget();
-	it->type = SK_BOOL;it->it_b = ((arg5.type & SK_HEAD) == SK_REF)? * (EIF_BOOLEAN *)arg5.it_r: arg5.it_b;
-	it = iget();
-	it->type = SK_REF;
-	it->it_ref = Current;
-
-	xinterp(IC, 6);
-}
-
-static void toc311(fnptr);
-static void toc311 (fnptr ptr)
-{
-	GTCX
-	EIF_REFERENCE Current;
-	EIF_TYPED_VALUE *arg1;
-	EIF_TYPED_VALUE *arg2;
-	EIF_TYPED_VALUE *arg3;
-	EIF_TYPED_VALUE *arg4;
-	EIF_TYPED_VALUE *arg5;
-	Current = opop()->it_ref;
-	
-	arg5 = opop();
-	arg4 = opop();
-	arg3 = opop();
-	arg2 = opop();
-	arg1 = opop();
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4,*arg5);
-}
-
 static void toi309(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
 static void toi309 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
@@ -4925,7 +4854,7 @@ static void toi309 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	it = iget();
 	it->type = SK_UINT32;it->it_n4 = ((arg4.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_32 *)arg4.it_r: arg4.it_n4;
 	it = iget();
-	it->type = SK_CHAR8;it->it_c1 = ((arg5.type & SK_HEAD) == SK_REF)? * (EIF_CHARACTER_8 *)arg5.it_r: arg5.it_c1;
+	it->type = SK_BOOL;it->it_b = ((arg5.type & SK_HEAD) == SK_REF)? * (EIF_BOOLEAN *)arg5.it_r: arg5.it_b;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -4953,8 +4882,49 @@ static void toc309 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4,*arg5);
 }
 
-static EIF_TYPED_VALUE toi416(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi416 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static void toi311(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi311 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+{
+	GTCX
+	EIF_TYPED_VALUE *it;
+	*iget() = arg1;
+	it = iget();
+	it->type = SK_INT32;it->it_i4 = ((arg2.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_32 *)arg2.it_r: arg2.it_i4;
+	it = iget();
+	it->type = SK_INT32;it->it_i4 = ((arg3.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_32 *)arg3.it_r: arg3.it_i4;
+	it = iget();
+	it->type = SK_UINT32;it->it_n4 = ((arg4.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_32 *)arg4.it_r: arg4.it_n4;
+	it = iget();
+	it->type = SK_CHAR8;it->it_c1 = ((arg5.type & SK_HEAD) == SK_REF)? * (EIF_CHARACTER_8 *)arg5.it_r: arg5.it_c1;
+	it = iget();
+	it->type = SK_REF;
+	it->it_ref = Current;
+
+	xinterp(IC, 6);
+}
+
+static void toc311(fnptr);
+static void toc311 (fnptr ptr)
+{
+	GTCX
+	EIF_REFERENCE Current;
+	EIF_TYPED_VALUE *arg1;
+	EIF_TYPED_VALUE *arg2;
+	EIF_TYPED_VALUE *arg3;
+	EIF_TYPED_VALUE *arg4;
+	EIF_TYPED_VALUE *arg5;
+	Current = opop()->it_ref;
+	
+	arg5 = opop();
+	arg4 = opop();
+	arg3 = opop();
+	arg2 = opop();
+	arg1 = opop();
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4,*arg5);
+}
+
+static EIF_TYPED_VALUE toi424(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi424 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -4967,8 +4937,8 @@ static EIF_TYPED_VALUE toi416 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc416(fnptr);
-static void toc416 (fnptr ptr)
+static void toc424(fnptr);
+static void toc424 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -5091,13 +5061,13 @@ static void toc93 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi392(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi392 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi394(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi394 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_CHARACTER_8* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_REAL_32* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -5106,8 +5076,8 @@ static EIF_TYPED_VALUE toi392 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc392(fnptr);
-static void toc392 (fnptr ptr)
+static void toc394(fnptr);
+static void toc394 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -5226,13 +5196,13 @@ static void toc488 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi285(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi285 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi290(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi290 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_UINT64;it->it_n8 = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_64 *)arg1.it_r: arg1.it_n8;
+	it->type = SK_BOOL;it->it_b = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_BOOLEAN *)arg1.it_r: arg1.it_b;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -5243,8 +5213,8 @@ static EIF_TYPED_VALUE toi285 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return *it;
 }
 
-static void toc285(fnptr);
-static void toc285 (fnptr ptr)
+static void toc290(fnptr);
+static void toc290 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -5264,8 +5234,8 @@ static void toc285 (fnptr ptr)
 	}
 }
 
-static void toi319(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi319 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi314(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi314 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -5285,8 +5255,8 @@ static void toi319 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc319(fnptr);
-static void toc319 (fnptr ptr)
+static void toc314(fnptr);
+static void toc314 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -5366,8 +5336,8 @@ static void toc322 (fnptr ptr)
 	*it = result;
 }
 
-static void toi315(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi315 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi317(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi317 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -5387,8 +5357,8 @@ static void toi315 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc315(fnptr);
-static void toc315 (fnptr ptr)
+static void toc317(fnptr);
+static void toc317 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -5593,7 +5563,7 @@ static EIF_TYPED_VALUE toi412 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_8* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_16* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -5618,8 +5588,8 @@ static void toc412 (fnptr ptr)
 	*it = result;
 }
 
-static void toi314(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi314 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi312(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi312 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -5639,8 +5609,8 @@ static void toi314 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc314(fnptr);
-static void toc314 (fnptr ptr)
+static void toc312(fnptr);
+static void toc312 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -5659,8 +5629,8 @@ static void toc314 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4,*arg5);
 }
 
-static EIF_TYPED_VALUE toi16(EIF_REFERENCE);
-static EIF_TYPED_VALUE toi16 (EIF_REFERENCE Current)
+static EIF_TYPED_VALUE toi17(EIF_REFERENCE);
+static EIF_TYPED_VALUE toi17 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -5672,8 +5642,8 @@ static EIF_TYPED_VALUE toi16 (EIF_REFERENCE Current)
 	return * opop();
 }
 
-static void toc16(fnptr);
-static void toc16 (fnptr ptr)
+static void toc17(fnptr);
+static void toc17 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -5785,8 +5755,8 @@ static void toc460 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi281(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi281 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi282(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi282 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -5802,8 +5772,8 @@ static EIF_TYPED_VALUE toi281 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return *it;
 }
 
-static void toc281(fnptr);
-static void toc281 (fnptr ptr)
+static void toc282(fnptr);
+static void toc282 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -5864,8 +5834,8 @@ static void toc306 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4,*arg5);
 }
 
-static void toi307(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi307 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi308(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi308 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -5884,8 +5854,8 @@ static void toi307 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc307(fnptr);
-static void toc307 (fnptr ptr)
+static void toc308(fnptr);
+static void toc308 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -5966,8 +5936,8 @@ static void toc468 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi159(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi159 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi157(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi157 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -5981,8 +5951,8 @@ static EIF_TYPED_VALUE toi159 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc159(fnptr);
-static void toc159 (fnptr ptr)
+static void toc157(fnptr);
+static void toc157 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -5997,8 +5967,8 @@ static void toc159 (fnptr ptr)
 	*it = result;
 }
 
-static void toi276(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi276 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi270(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi270 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -6017,8 +5987,8 @@ static void toi276 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc276(fnptr);
-static void toc276 (fnptr ptr)
+static void toc270(fnptr);
+static void toc270 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -6108,8 +6078,8 @@ static void toc483 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi399(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi399 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi398(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi398 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -6123,8 +6093,8 @@ static EIF_TYPED_VALUE toi399 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc399(fnptr);
-static void toc399 (fnptr ptr)
+static void toc398(fnptr);
+static void toc398 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -6184,7 +6154,7 @@ static EIF_TYPED_VALUE toi409 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_32* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_16* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -6209,8 +6179,8 @@ static void toc409 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi401(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi401 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi404(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi404 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -6224,8 +6194,8 @@ static EIF_TYPED_VALUE toi401 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc401(fnptr);
-static void toc401 (fnptr ptr)
+static void toc404(fnptr);
+static void toc404 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -6311,8 +6281,8 @@ static void toc304 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static void toi271(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi271 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi276(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi276 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -6331,8 +6301,8 @@ static void toi271 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc271(fnptr);
-static void toc271 (fnptr ptr)
+static void toc276(fnptr);
+static void toc276 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -6477,8 +6447,8 @@ static void toc476 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4,*arg5,*arg6,*arg7,*arg8,*arg9,*arg10);
 }
 
-static EIF_TYPED_VALUE toi426(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi426 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi427(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi427 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -6491,8 +6461,8 @@ static EIF_TYPED_VALUE toi426 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc426(fnptr);
-static void toc426 (fnptr ptr)
+static void toc427(fnptr);
+static void toc427 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -6507,8 +6477,8 @@ static void toc426 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi284(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi284 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi289(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi289 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -6524,8 +6494,8 @@ static EIF_TYPED_VALUE toi284 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return *it;
 }
 
-static void toc284(fnptr);
-static void toc284 (fnptr ptr)
+static void toc289(fnptr);
+static void toc289 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -6602,8 +6572,8 @@ static void toc11 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi424(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi424 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi416(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi416 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -6616,8 +6586,8 @@ static EIF_TYPED_VALUE toi424 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc424(fnptr);
-static void toc424 (fnptr ptr)
+static void toc416(fnptr);
+static void toc416 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -6662,8 +6632,8 @@ static void toc29 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2);
 }
 
-static void toi292(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi292 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi299(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi299 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -6681,8 +6651,8 @@ static void toi292 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc292(fnptr);
-static void toc292 (fnptr ptr)
+static void toc299(fnptr);
+static void toc299 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -6737,8 +6707,8 @@ static void toc263 (fnptr ptr)
 	}
 }
 
-static void toi291(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi291 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi293(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi293 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -6756,8 +6726,8 @@ static void toi291 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc291(fnptr);
-static void toc291 (fnptr ptr)
+static void toc293(fnptr);
+static void toc293 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -6804,8 +6774,8 @@ static void toc229 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2);
 }
 
-static void toi274(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi274 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi273(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi273 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -6824,8 +6794,8 @@ static void toi274 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc274(fnptr);
-static void toc274 (fnptr ptr)
+static void toc273(fnptr);
+static void toc273 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -7166,8 +7136,8 @@ static void toc113 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2);
 }
 
-static void toi300(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi300 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi296(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi296 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -7185,8 +7155,8 @@ static void toi300 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc300(fnptr);
-static void toc300 (fnptr ptr)
+static void toc296(fnptr);
+static void toc296 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -7203,8 +7173,8 @@ static void toc300 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static void toi298(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi298 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi294(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi294 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -7222,8 +7192,8 @@ static void toi298 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc298(fnptr);
-static void toc298 (fnptr ptr)
+static void toc294(fnptr);
+static void toc294 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -7275,8 +7245,8 @@ static void toc63 (fnptr ptr)
 	*it = result;
 }
 
-static void toi270(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi270 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi278(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi278 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -7295,8 +7265,8 @@ static void toi270 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc270(fnptr);
-static void toc270 (fnptr ptr)
+static void toc278(fnptr);
+static void toc278 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -7352,8 +7322,8 @@ static void toc68 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi157(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi157 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi156(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi156 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -7367,8 +7337,8 @@ static EIF_TYPED_VALUE toi157 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc157(fnptr);
-static void toc157 (fnptr ptr)
+static void toc156(fnptr);
+static void toc156 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -7454,7 +7424,7 @@ static EIF_TYPED_VALUE toi411 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_16* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_32* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -7549,8 +7519,8 @@ static void toc375 (fnptr ptr)
 	*it = result;
 }
 
-static void toi294(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi294 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi301(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi301 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -7568,8 +7538,8 @@ static void toi294 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc294(fnptr);
-static void toc294 (fnptr ptr)
+static void toc301(fnptr);
+static void toc301 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -7663,8 +7633,8 @@ static void toc489 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4,*arg5,*arg6);
 }
 
-static void toi267(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi267 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi268(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi268 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -7683,8 +7653,8 @@ static void toi267 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc267(fnptr);
-static void toc267 (fnptr ptr)
+static void toc268(fnptr);
+static void toc268 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -7701,8 +7671,8 @@ static void toc267 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static void toi308(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi308 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi307(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi307 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -7722,8 +7692,8 @@ static void toi308 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc308(fnptr);
-static void toc308 (fnptr ptr)
+static void toc307(fnptr);
+static void toc307 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -8137,13 +8107,13 @@ static void toc445 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi394(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi394 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi401(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi401 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_8* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_CHARACTER_8* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -8152,8 +8122,8 @@ static EIF_TYPED_VALUE toi394 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc394(fnptr);
-static void toc394 (fnptr ptr)
+static void toc401(fnptr);
+static void toc401 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -8199,8 +8169,8 @@ static void toc54 (fnptr ptr)
 	*it = result;
 }
 
-static void toi312(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi312 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi310(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi310 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -8220,8 +8190,8 @@ static void toi312 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc312(fnptr);
-static void toc312 (fnptr ptr)
+static void toc310(fnptr);
+static void toc310 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -8344,8 +8314,8 @@ static void toc67 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi328(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi328 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
+static EIF_TYPED_VALUE toi332(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi332 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -8363,8 +8333,8 @@ static EIF_TYPED_VALUE toi328 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return * opop();
 }
 
-static void toc328(fnptr);
-static void toc328 (fnptr ptr)
+static void toc332(fnptr);
+static void toc332 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -8483,8 +8453,8 @@ static void toc187 (fnptr ptr)
 	*it = result;
 }
 
-static void toi310(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi310 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi316(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi316 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -8504,8 +8474,8 @@ static void toi310 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc310(fnptr);
-static void toc310 (fnptr ptr)
+static void toc316(fnptr);
+static void toc316 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -8976,8 +8946,8 @@ static void toc397 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi180(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi180 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static EIF_TYPED_VALUE toi182(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi182 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -8993,8 +8963,8 @@ static EIF_TYPED_VALUE toi180 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return * opop();
 }
 
-static void toc180(fnptr);
-static void toc180 (fnptr ptr)
+static void toc182(fnptr);
+static void toc182 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -9011,8 +8981,8 @@ static void toc180 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi398(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi398 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi391(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi391 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -9026,8 +8996,8 @@ static EIF_TYPED_VALUE toi398 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc398(fnptr);
-static void toc398 (fnptr ptr)
+static void toc391(fnptr);
+static void toc391 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -9204,8 +9174,8 @@ static void toc140 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi147(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi147 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi146(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi146 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -9219,8 +9189,8 @@ static EIF_TYPED_VALUE toi147 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc147(fnptr);
-static void toc147 (fnptr ptr)
+static void toc146(fnptr);
+static void toc146 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -9272,8 +9242,8 @@ static void toc373 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi182(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi182 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static EIF_TYPED_VALUE toi181(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi181 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -9289,8 +9259,8 @@ static EIF_TYPED_VALUE toi182 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return * opop();
 }
 
-static void toc182(fnptr);
-static void toc182 (fnptr ptr)
+static void toc181(fnptr);
+static void toc181 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -10584,8 +10554,8 @@ static void toc83 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static void toi275(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi275 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi272(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi272 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -10604,8 +10574,8 @@ static void toi275 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc275(fnptr);
-static void toc275 (fnptr ptr)
+static void toc272(fnptr);
+static void toc272 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -10658,7 +10628,7 @@ static EIF_TYPED_VALUE toi408 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_64* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_32* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -11195,8 +11165,8 @@ static void toc466 (fnptr ptr)
 	*it = result;
 }
 
-static void toi342(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi342 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
+static void toi346(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi346 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -11213,8 +11183,8 @@ static void toi342 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 4);
 }
 
-static void toc342(fnptr);
-static void toc342 (fnptr ptr)
+static void toc346(fnptr);
+static void toc346 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -11543,6 +11513,36 @@ static void toc52 (fnptr ptr)
 	*it = result;
 }
 
+static EIF_TYPED_VALUE toi423(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi423 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+{
+	GTCX
+	EIF_TYPED_VALUE *it;
+	*iget() = arg1;
+	it = iget();
+	it->type = SK_REF;
+	it->it_ref = Current;
+
+	xinterp(IC, 2);
+	return * opop();
+}
+
+static void toc423(fnptr);
+static void toc423 (fnptr ptr)
+{
+	GTCX
+	EIF_REFERENCE Current;
+	EIF_TYPED_VALUE result;
+	EIF_TYPED_VALUE *it;
+	EIF_TYPED_VALUE *arg1;
+	Current = opop()->it_ref;
+	
+	arg1 = opop();
+	result = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) ptr)(Current,*arg1);
+	it = iget();
+	*it = result;
+}
+
 static EIF_TYPED_VALUE toi454(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
 static EIF_TYPED_VALUE toi454 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
@@ -11578,13 +11578,13 @@ static void toc454 (fnptr ptr)
 	*it = result;
 }
 
-static void toi168(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi168 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static void toi170(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi170 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_UINT32;it->it_n4 = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_32 *)arg1.it_r: arg1.it_n4;
+	it->type = SK_CHAR32;it->it_c4 = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_CHARACTER_32 *)arg1.it_r: arg1.it_c4;
 	it = iget();
 	it->type = SK_INT32;it->it_i4 = ((arg2.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_32 *)arg2.it_r: arg2.it_i4;
 	it = iget();
@@ -11594,8 +11594,8 @@ static void toi168 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 3);
 }
 
-static void toc168(fnptr);
-static void toc168 (fnptr ptr)
+static void toc170(fnptr);
+static void toc170 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -11608,8 +11608,8 @@ static void toc168 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2);
 }
 
-static EIF_TYPED_VALUE toi396(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi396 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi395(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi395 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -11623,8 +11623,8 @@ static EIF_TYPED_VALUE toi396 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc396(fnptr);
-static void toc396 (fnptr ptr)
+static void toc395(fnptr);
+static void toc395 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -11948,7 +11948,7 @@ static EIF_TYPED_VALUE toi410 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_32* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_8* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -12205,8 +12205,8 @@ static void toc358 (fnptr ptr)
 	}
 }
 
-static void toi171(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi171 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static void toi169(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi169 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -12221,8 +12221,8 @@ static void toi171 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 3);
 }
 
-static void toc171(fnptr);
-static void toc171 (fnptr ptr)
+static void toc169(fnptr);
+static void toc169 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -12350,8 +12350,8 @@ static void toc141 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi135(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi135 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi136(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi136 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -12365,8 +12365,8 @@ static EIF_TYPED_VALUE toi135 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc135(fnptr);
-static void toc135 (fnptr ptr)
+static void toc136(fnptr);
+static void toc136 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -12573,43 +12573,13 @@ static void toc220 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static void toi170(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi170 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
-{
-	GTCX
-	EIF_TYPED_VALUE *it;
-	it = iget();
-	it->type = SK_CHAR8;it->it_c1 = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_CHARACTER_8 *)arg1.it_r: arg1.it_c1;
-	it = iget();
-	it->type = SK_INT32;it->it_i4 = ((arg2.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_32 *)arg2.it_r: arg2.it_i4;
-	it = iget();
-	it->type = SK_REF;
-	it->it_ref = Current;
-
-	xinterp(IC, 3);
-}
-
-static void toc170(fnptr);
-static void toc170 (fnptr ptr)
-{
-	GTCX
-	EIF_REFERENCE Current;
-	EIF_TYPED_VALUE *arg1;
-	EIF_TYPED_VALUE *arg2;
-	Current = opop()->it_ref;
-	
-	arg2 = opop();
-	arg1 = opop();
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2);
-}
-
 static void toi167(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
 static void toi167 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_CHAR32;it->it_c4 = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_CHARACTER_32 *)arg1.it_r: arg1.it_c4;
+	it->type = SK_CHAR8;it->it_c1 = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_CHARACTER_8 *)arg1.it_r: arg1.it_c1;
 	it = iget();
 	it->type = SK_INT32;it->it_i4 = ((arg2.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_32 *)arg2.it_r: arg2.it_i4;
 	it = iget();
@@ -12633,8 +12603,38 @@ static void toc167 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2);
 }
 
-static EIF_TYPED_VALUE toi283(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi283 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static void toi168(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi168 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+{
+	GTCX
+	EIF_TYPED_VALUE *it;
+	it = iget();
+	it->type = SK_UINT32;it->it_n4 = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_32 *)arg1.it_r: arg1.it_n4;
+	it = iget();
+	it->type = SK_INT32;it->it_i4 = ((arg2.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_32 *)arg2.it_r: arg2.it_i4;
+	it = iget();
+	it->type = SK_REF;
+	it->it_ref = Current;
+
+	xinterp(IC, 3);
+}
+
+static void toc168(fnptr);
+static void toc168 (fnptr ptr)
+{
+	GTCX
+	EIF_REFERENCE Current;
+	EIF_TYPED_VALUE *arg1;
+	EIF_TYPED_VALUE *arg2;
+	Current = opop()->it_ref;
+	
+	arg2 = opop();
+	arg1 = opop();
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2);
+}
+
+static EIF_TYPED_VALUE toi280(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi280 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -12650,8 +12650,8 @@ static EIF_TYPED_VALUE toi283 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return *it;
 }
 
-static void toc283(fnptr);
-static void toc283 (fnptr ptr)
+static void toc280(fnptr);
+static void toc280 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -12776,13 +12776,13 @@ static void toc303 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi393(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi393 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi400(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi400 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_64* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_64* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -12791,8 +12791,8 @@ static EIF_TYPED_VALUE toi393 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc393(fnptr);
-static void toc393 (fnptr ptr)
+static void toc400(fnptr);
+static void toc400 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -12807,8 +12807,8 @@ static void toc393 (fnptr ptr)
 	*it = result;
 }
 
-static void toi273(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi273 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi274(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi274 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -12827,8 +12827,8 @@ static void toi273 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc273(fnptr);
-static void toc273 (fnptr ptr)
+static void toc274(fnptr);
+static void toc274 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -12949,8 +12949,8 @@ static void toc219 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static EIF_TYPED_VALUE toi156(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi156 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi158(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi158 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -12964,8 +12964,8 @@ static EIF_TYPED_VALUE toi156 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc156(fnptr);
-static void toc156 (fnptr ptr)
+static void toc158(fnptr);
+static void toc158 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -12980,8 +12980,8 @@ static void toc156 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi356(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi356 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static EIF_TYPED_VALUE toi357(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi357 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -12999,8 +12999,8 @@ static EIF_TYPED_VALUE toi356 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return *it;
 }
 
-static void toc356(fnptr);
-static void toc356 (fnptr ptr)
+static void toc357(fnptr);
+static void toc357 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -13142,8 +13142,8 @@ static void toc384 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi418(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi418 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi426(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi426 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -13156,8 +13156,8 @@ static EIF_TYPED_VALUE toi418 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc418(fnptr);
-static void toc418 (fnptr ptr)
+static void toc426(fnptr);
+static void toc426 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -13250,8 +13250,8 @@ static void toc71 (fnptr ptr)
 	*it = result;
 }
 
-static void toi301(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi301 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi297(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi297 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -13269,8 +13269,8 @@ static void toi301 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc301(fnptr);
-static void toc301 (fnptr ptr)
+static void toc297(fnptr);
+static void toc297 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -13287,8 +13287,8 @@ static void toc301 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi400(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi400 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi399(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi399 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -13302,8 +13302,8 @@ static EIF_TYPED_VALUE toi400 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc400(fnptr);
-static void toc400 (fnptr ptr)
+static void toc399(fnptr);
+static void toc399 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -13542,8 +13542,8 @@ static void toc138 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi146(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi146 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi145(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi145 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -13557,8 +13557,8 @@ static EIF_TYPED_VALUE toi146 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc146(fnptr);
-static void toc146 (fnptr ptr)
+static void toc145(fnptr);
+static void toc145 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -13643,8 +13643,8 @@ static void toc213 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static void toi266(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi266 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi279(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi279 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -13663,8 +13663,8 @@ static void toi266 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc266(fnptr);
-static void toc266 (fnptr ptr)
+static void toc279(fnptr);
+static void toc279 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -13847,8 +13847,8 @@ static void toc365 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi181(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi181 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static EIF_TYPED_VALUE toi180(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi180 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -13864,8 +13864,8 @@ static EIF_TYPED_VALUE toi181 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return * opop();
 }
 
-static void toc181(fnptr);
-static void toc181 (fnptr ptr)
+static void toc180(fnptr);
+static void toc180 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -13882,8 +13882,8 @@ static void toc181 (fnptr ptr)
 	*it = result;
 }
 
-static void toi318(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi318 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi313(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi313 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -13903,8 +13903,8 @@ static void toi318 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc318(fnptr);
-static void toc318 (fnptr ptr)
+static void toc313(fnptr);
+static void toc313 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -14020,8 +14020,8 @@ static void toc132 (fnptr ptr)
 	*it = result;
 }
 
-static void toi172(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi172 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static void toi171(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi171 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -14036,8 +14036,8 @@ static void toi172 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 3);
 }
 
-static void toc172(fnptr);
-static void toc172 (fnptr ptr)
+static void toc171(fnptr);
+static void toc171 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -14081,8 +14081,8 @@ static void toc104 (fnptr ptr)
 	*it = result;
 }
 
-static void toi169(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi169 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static void toi172(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi172 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -14097,8 +14097,8 @@ static void toi169 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 3);
 }
 
-static void toc169(fnptr);
-static void toc169 (fnptr ptr)
+static void toc172(fnptr);
+static void toc172 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -14662,8 +14662,8 @@ static void toc472 (fnptr ptr)
 	*it = result;
 }
 
-static void toi341(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi341 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
+static void toi342(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi342 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -14680,8 +14680,8 @@ static void toi341 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 4);
 }
 
-static void toc341(fnptr);
-static void toc341 (fnptr ptr)
+static void toc342(fnptr);
+static void toc342 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -14696,8 +14696,8 @@ static void toc341 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static EIF_TYPED_VALUE toi18(EIF_REFERENCE);
-static EIF_TYPED_VALUE toi18 (EIF_REFERENCE Current)
+static EIF_TYPED_VALUE toi19(EIF_REFERENCE);
+static EIF_TYPED_VALUE toi19 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -14709,8 +14709,8 @@ static EIF_TYPED_VALUE toi18 (EIF_REFERENCE Current)
 	return * opop();
 }
 
-static void toc18(fnptr);
-static void toc18 (fnptr ptr)
+static void toc19(fnptr);
+static void toc19 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -14756,8 +14756,8 @@ static void toc209 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static EIF_TYPED_VALUE toi136(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi136 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi135(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi135 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -14771,8 +14771,8 @@ static EIF_TYPED_VALUE toi136 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc136(fnptr);
-static void toc136 (fnptr ptr)
+static void toc135(fnptr);
+static void toc135 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -14894,8 +14894,8 @@ static void toc255 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi355(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi355 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static EIF_TYPED_VALUE toi356(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi356 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -14913,8 +14913,8 @@ static EIF_TYPED_VALUE toi355 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return *it;
 }
 
-static void toc355(fnptr);
-static void toc355 (fnptr ptr)
+static void toc356(fnptr);
+static void toc356 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -15047,8 +15047,8 @@ static void toc349 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static EIF_TYPED_VALUE toi391(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi391 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi392(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi392 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -15062,8 +15062,8 @@ static EIF_TYPED_VALUE toi391 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc391(fnptr);
-static void toc391 (fnptr ptr)
+static void toc392(fnptr);
+static void toc392 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -15148,8 +15148,8 @@ static void toc150 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi145(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi145 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi147(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi147 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -15163,8 +15163,8 @@ static EIF_TYPED_VALUE toi145 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc145(fnptr);
-static void toc145 (fnptr ptr)
+static void toc147(fnptr);
+static void toc147 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -15239,8 +15239,8 @@ static void toc221 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static EIF_TYPED_VALUE toi402(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi402 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi393(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi393 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -15254,8 +15254,8 @@ static EIF_TYPED_VALUE toi402 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc402(fnptr);
-static void toc402 (fnptr ptr)
+static void toc393(fnptr);
+static void toc393 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -15478,8 +15478,8 @@ static void toc364 (fnptr ptr)
 	}
 }
 
-static EIF_TYPED_VALUE toi405(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi405 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi396(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi396 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -15493,8 +15493,8 @@ static EIF_TYPED_VALUE toi405 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc405(fnptr);
-static void toc405 (fnptr ptr)
+static void toc396(fnptr);
+static void toc396 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -15660,8 +15660,8 @@ static void toc95 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi289(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi289 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi283(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi283 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -15677,8 +15677,8 @@ static EIF_TYPED_VALUE toi289 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return *it;
 }
 
-static void toc289(fnptr);
-static void toc289 (fnptr ptr)
+static void toc283(fnptr);
+static void toc283 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -15698,8 +15698,8 @@ static void toc289 (fnptr ptr)
 	}
 }
 
-static EIF_TYPED_VALUE toi288(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi288 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi284(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi284 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -15715,8 +15715,8 @@ static EIF_TYPED_VALUE toi288 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return *it;
 }
 
-static void toc288(fnptr);
-static void toc288 (fnptr ptr)
+static void toc284(fnptr);
+static void toc284 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -15736,8 +15736,8 @@ static void toc288 (fnptr ptr)
 	}
 }
 
-static EIF_TYPED_VALUE toi331(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi331 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
+static EIF_TYPED_VALUE toi327(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi327 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -15755,8 +15755,8 @@ static EIF_TYPED_VALUE toi331 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return * opop();
 }
 
-static void toc331(fnptr);
-static void toc331 (fnptr ptr)
+static void toc327(fnptr);
+static void toc327 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -15920,8 +15920,8 @@ static void toc438 (fnptr ptr)
 	*it = result;
 }
 
-static void toi313(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi313 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
+static void toi319(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi319 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4, EIF_TYPED_VALUE arg5)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -15941,8 +15941,8 @@ static void toi313 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 6);
 }
 
-static void toc313(fnptr);
-static void toc313 (fnptr ptr)
+static void toc319(fnptr);
+static void toc319 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -16066,8 +16066,8 @@ static void toc222 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static EIF_TYPED_VALUE toi19(EIF_REFERENCE);
-static EIF_TYPED_VALUE toi19 (EIF_REFERENCE Current)
+static EIF_TYPED_VALUE toi16(EIF_REFERENCE);
+static EIF_TYPED_VALUE toi16 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -16079,8 +16079,8 @@ static EIF_TYPED_VALUE toi19 (EIF_REFERENCE Current)
 	return * opop();
 }
 
-static void toc19(fnptr);
-static void toc19 (fnptr ptr)
+static void toc16(fnptr);
+static void toc16 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -16093,8 +16093,8 @@ static void toc19 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi425(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi425 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi419(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi419 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -16107,8 +16107,8 @@ static EIF_TYPED_VALUE toi425 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc425(fnptr);
-static void toc425 (fnptr ptr)
+static void toc419(fnptr);
+static void toc419 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -16393,8 +16393,8 @@ static void toc493 (fnptr ptr)
 	*it = result;
 }
 
-static void toi297(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static void toi297 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
+static void toi295(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static void toi295 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2, EIF_TYPED_VALUE arg3, EIF_TYPED_VALUE arg4)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -16412,8 +16412,8 @@ static void toi297 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE
 	xinterp(IC, 5);
 }
 
-static void toc297(fnptr);
-static void toc297 (fnptr ptr)
+static void toc295(fnptr);
+static void toc295 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -16430,13 +16430,13 @@ static void toc297 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3,*arg4);
 }
 
-static EIF_TYPED_VALUE toi395(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi395 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi402(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi402 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_INTEGER_16* *)arg1.it_r: arg1.it_p;
+	it->type = SK_POINTER;it->it_p = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_CHARACTER_32* *)arg1.it_r: arg1.it_p;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -16445,8 +16445,8 @@ static EIF_TYPED_VALUE toi395 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc395(fnptr);
-static void toc395 (fnptr ptr)
+static void toc402(fnptr);
+static void toc402 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -16461,8 +16461,8 @@ static void toc395 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi354(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi354 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
+static EIF_TYPED_VALUE toi355(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi355 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_TYPED_VALUE arg2)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -16480,8 +16480,8 @@ static EIF_TYPED_VALUE toi354 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1, EIF_
 	return *it;
 }
 
-static void toc354(fnptr);
-static void toc354 (fnptr ptr)
+static void toc355(fnptr);
+static void toc355 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -16503,8 +16503,8 @@ static void toc354 (fnptr ptr)
 	}
 }
 
-static EIF_TYPED_VALUE toi17(EIF_REFERENCE);
-static EIF_TYPED_VALUE toi17 (EIF_REFERENCE Current)
+static EIF_TYPED_VALUE toi18(EIF_REFERENCE);
+static EIF_TYPED_VALUE toi18 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -16516,8 +16516,8 @@ static EIF_TYPED_VALUE toi17 (EIF_REFERENCE Current)
 	return * opop();
 }
 
-static void toc17(fnptr);
-static void toc17 (fnptr ptr)
+static void toc18(fnptr);
+static void toc18 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -16530,8 +16530,8 @@ static void toc17 (fnptr ptr)
 	*it = result;
 }
 
-static EIF_TYPED_VALUE toi417(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi417 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi425(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi425 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -16544,8 +16544,8 @@ static EIF_TYPED_VALUE toi417 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc417(fnptr);
-static void toc417 (fnptr ptr)
+static void toc425(fnptr);
+static void toc425 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -16636,13 +16636,13 @@ static void toc490 (fnptr ptr)
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) ptr)(Current,*arg1,*arg2,*arg3);
 }
 
-static EIF_TYPED_VALUE toi280(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi280 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi287(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi287 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
 	it = iget();
-	it->type = SK_BOOL;it->it_b = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_BOOLEAN *)arg1.it_r: arg1.it_b;
+	it->type = SK_UINT64;it->it_n8 = ((arg1.type & SK_HEAD) == SK_REF)? * (EIF_NATURAL_64 *)arg1.it_r: arg1.it_n8;
 	it = iget();
 	it->type = SK_REF;
 	it->it_ref = Current;
@@ -16653,8 +16653,8 @@ static EIF_TYPED_VALUE toi280 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return *it;
 }
 
-static void toc280(fnptr);
-static void toc280 (fnptr ptr)
+static void toc287(fnptr);
+static void toc287 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;
@@ -16674,8 +16674,8 @@ static void toc280 (fnptr ptr)
 	}
 }
 
-static EIF_TYPED_VALUE toi423(EIF_REFERENCE, EIF_TYPED_VALUE);
-static EIF_TYPED_VALUE toi423 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
+static EIF_TYPED_VALUE toi422(EIF_REFERENCE, EIF_TYPED_VALUE);
+static EIF_TYPED_VALUE toi422 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 {
 	GTCX
 	EIF_TYPED_VALUE *it;
@@ -16688,8 +16688,8 @@ static EIF_TYPED_VALUE toi423 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1)
 	return * opop();
 }
 
-static void toc423(fnptr);
-static void toc423 (fnptr ptr)
+static void toc422(fnptr);
+static void toc422 (fnptr ptr)
 {
 	GTCX
 	EIF_REFERENCE Current;

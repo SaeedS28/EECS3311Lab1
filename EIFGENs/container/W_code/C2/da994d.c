@@ -31,17 +31,17 @@ static const EIF_TYPE_INDEX egt_18_994 [] = {0xFF01,984,0xFFFF};
 static const EIF_TYPE_INDEX egt_19_994 [] = {0xFF01,960,0xFFFF};
 static const EIF_TYPE_INDEX egt_20_994 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_21_994 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_22_994 [] = {0xFF01,263,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_23_994 [] = {0xFF01,263,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_24_994 [] = {0xFF01,263,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_25_994 [] = {0xFF01,263,0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_26_994 [] = {0xFF01,351,217,0xFFFF};
+static const EIF_TYPE_INDEX egt_22_994 [] = {0xFF01,247,0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_23_994 [] = {0xFF01,247,0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_24_994 [] = {0xFF01,247,0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_25_994 [] = {0xFF01,247,0xFF01,231,0xFFFF};
+static const EIF_TYPE_INDEX egt_26_994 [] = {0xFF01,316,217,0xFFFF};
 static const EIF_TYPE_INDEX egt_27_994 [] = {0xFF01,165,0xFFFF};
 static const EIF_TYPE_INDEX egt_28_994 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_29_994 [] = {0xFF01,996,0xFFFF};
 static const EIF_TYPE_INDEX egt_30_994 [] = {0xFF01,993,0xFFFF};
 static const EIF_TYPE_INDEX egt_31_994 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_32_994 [] = {0xFF01,340,217,0xFFFF};
+static const EIF_TYPE_INDEX egt_32_994 [] = {0xFF01,319,217,0xFFFF};
 static const EIF_TYPE_INDEX egt_33_994 [] = {0xFF01,231,0xFFFF};
 
 
@@ -178,13 +178,13 @@ void Init994(void)
 {
 	IDSC(desc_994, 0, 993);
 	IDSC(desc_994 + 1, 1, 993);
-	IDSC(desc_994 + 32, 210, 993);
+	IDSC(desc_994 + 32, 209, 993);
 	IDSC(desc_994 + 36, 298, 993);
 	IDSC(desc_994 + 39, 372, 993);
 	IDSC(desc_994 + 43, 390, 993);
 	IDSC(desc_994 + 47, 378, 993);
 	IDSC(desc_994 + 61, 386, 993);
-	IDSC(desc_994 + 69, 127, 993);
+	IDSC(desc_994 + 69, 125, 993);
 	IDSC(desc_994 + 71, 373, 993);
 	IDSC(desc_994 + 83, 374, 993);
 	IDSC(desc_994 + 90, 366, 993);

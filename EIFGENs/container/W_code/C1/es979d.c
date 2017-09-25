@@ -26,7 +26,7 @@ static const EIF_TYPE_INDEX egt_13_979 [] = {0xFF01,51,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_979 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_979 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_16_979 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_17_979 [] = {0xFF01,257,0xFF01,0xFFF9,0,185,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_979 [] = {0xFF01,255,0xFF01,0xFFF9,0,185,0xFFFF};
 
 
 static const struct desc_info desc_979[] = {
@@ -138,9 +138,9 @@ void Init979(void)
 {
 	IDSC(desc_979, 0, 978);
 	IDSC(desc_979 + 1, 1, 978);
-	IDSC(desc_979 + 32, 190, 978);
-	IDSC(desc_979 + 65, 229, 978);
-	IDSC(desc_979 + 66, 103, 978);
+	IDSC(desc_979 + 32, 189, 978);
+	IDSC(desc_979 + 65, 230, 978);
+	IDSC(desc_979 + 66, 101, 978);
 	IDSC(desc_979 + 91, 364, 978);
 }
 
