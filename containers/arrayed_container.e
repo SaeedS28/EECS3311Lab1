@@ -77,24 +77,33 @@ feature -- Commands
 
 	delete_at (i: INTEGER)
 			-- Delete element stored at index 'i'.
+
 		require
 		valid_index (i)
+	local
+			string_forward: STRING
 		do
-
+			across
+			i |..| (imp.upper-1) as j
+			loop
+				string_forward := (imp[j.item+1])
+				imp.put (string_forward, j.item)
+			end
+			imp.remove_tail (1)
 		ensure
 			size_changed: imp.count = (old imp.twin.count-1)
---			left_half_the_same:
---			across
---			imp.lower |..| (i-1) as j
---			all
---			imp[j.item] ~ (old imp.twin)[j.item]
---			end
---			right_half_the_same:
---			across
---         	 i  |..| ((old imp.twin).upper-1) as j
---            all
---             imp[j.item+1]~(old imp.twin)[j.item]
---            end
+			left_half_the_same:
+			across
+			imp.lower |..| (i-1) as j
+			all
+			imp[j.item] ~ (old imp.twin)[j.item]
+			end
+			right_half_the_same:
+			across
+         	 i  |..| ((old imp.twin).upper-1) as j
+            all
+             imp[j.item-1]~(old imp.twin)[j.item]
+            end
 		end
 
 	insert_last (s: STRING)
@@ -173,7 +182,7 @@ feature -- Queries
 		Result := imp.item (i)
 
 		ensure
-			size_unchanged:Result = (imp.count = old imp.twin.count)
+			size_unchanged:Result = (imp.count ~ old imp.twin.count)
 			result_correct: Result = (imp.item (i) = imp.item (i))
 			no_elements_changed:
 			across

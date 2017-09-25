@@ -1,6 +1,6 @@
 note
 	description: "Summary description for {TEST_ARRAYED_CONTAINER}."
-	author: ""
+	author: "Tyler Noble"
 	date: "$Date$"
 	revision: "$Revision$"
 
@@ -17,6 +17,7 @@ feature {NONE} -- Initialization
 			-- Initialization for `Current'.
 		do
 	--		add_test (create {TEST_ARRAYED_CONTAINER}.make)
+	
 
 		end
 feature --Test cases
@@ -27,8 +28,11 @@ test_thing : BOOLEAN
 			imp : ARRAY[STRING]
 		do
 			comment("T1: Test make procedure ")
-	--		create imp.make(1,5)
-			Result := TRUE
+	create {ARRAY[STRING]} imp.make_empty
+			imp.force ("Alan", 1)
+			imp.force ("Mark", 2)
+			imp.force ("Tom", 3)
+			Result := imp.count > 1
 			end
 
 test_thing2 : BOOLEAN
@@ -55,7 +59,10 @@ test_thing4 : BOOLEAN
 			imp : ARRAY[STRING]
 		do
 			comment("T4:Test insert at post condition ")
---		create imp.make(1,5)
+create {ARRAY[STRING]} imp.make_empty
+			imp.force ("Alan", 1)
+			imp.force ("Mark", 2)
+			imp.force ("Tom", 3)
 			Result := TRUE
 			end
 test_thing5 : BOOLEAN
@@ -64,7 +71,10 @@ test_thing5 : BOOLEAN
 			imp : ARRAY[STRING]
 		do
 			comment("T5: test delete at's post condition ")
-	--		create imp.make(1,5)
+create {ARRAY[STRING]} imp.make_empty
+			imp.force ("Alan", 1)
+			imp.force ("Mark", 2)
+			imp.force ("Tom", 3)
 			Result := TRUE
 			end
 			test_thing6 : BOOLEAN
@@ -73,7 +83,10 @@ test_thing5 : BOOLEAN
 			imp : ARRAY[STRING]
 		do
 			comment("T6: test Insert last post condition ")
-	--		create imp.make(1,5)
+create {ARRAY[STRING]} imp.make_empty
+			imp.force ("Alan", 1)
+			imp.force ("Mark", 2)
+			imp.force ("Tom", 3)
 			Result := TRUE
 			end
 			test_thing7 : BOOLEAN
@@ -82,7 +95,11 @@ test_thing5 : BOOLEAN
 				imp : ARRAY[STRING]
 			do
 				comment("T7: Testing remove first postcondition ")
-		--		create imp.make(1,5)
+create {ARRAY[STRING]} imp.make_empty
+			imp.force ("Alan", 1)
+			imp.force ("Mark", 2)
+			imp.force ("Tom", 3)
+			print(imp)
 				Result := TRUE
 				end
 end
