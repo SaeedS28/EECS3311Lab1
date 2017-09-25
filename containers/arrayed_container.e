@@ -66,9 +66,10 @@ feature -- Commands
 			all
 			imp[j.item] ~ (old imp.twin)[j.item]
 			end
+
 			right_half_the_same: true
             across
-           i |..| (old imp.twin).upper as j
+          i  |..| (old imp.twin).upper as j
             all
              imp[j.item+1]~(old imp.twin)[j.item]
             end
@@ -91,7 +92,7 @@ feature -- Commands
 		do
 		  imp.force (s, imp.upper+1)
 		ensure
-			size_changed: (imp.count >= old imp.twin.count)
+			size_changed: (imp.count > old imp.twin.count)
 			last_inserted: (imp.at (imp.upper) ~ s)
 			others_unchanged:
 			across
@@ -108,12 +109,12 @@ feature -- Commands
 		do
 			imp.remove_head (1)
 		ensure
-			size_changed: (imp.count <= old imp.twin.count)
+			size_changed: (imp.count < old imp.twin.count)
 			others_unchanged:
 			across
-			old imp.twin.lower  |..| old imp.twin.upper as j
+			old imp.twin.lower  |..| imp.upper as j
 			all
-				imp[j.item]~ (old imp.twin)[j.item]
+				imp[j.item]~ (old imp.twin)[j.item+1]
 			end
 		end
 
@@ -177,5 +178,4 @@ invariant
 	consistency: imp.count = count
 end
 
---complete no elements changed
--- as well as others unchanged
+
