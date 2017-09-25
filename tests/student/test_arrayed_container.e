@@ -1,5 +1,6 @@
+
 note
-	description: "Summary description for {TEST_ARRAYED_CONTAINER}."
+	description: "Tests that Tyler is making"
 	author: "Tyler Noble"
 	date: "$Date$"
 	revision: "$Revision$"
@@ -7,18 +8,15 @@ note
 class
 	TEST_ARRAYED_CONTAINER
 inherit
-ES_TEST
+	ES_TEST
+
 create
 	make
 
-feature {NONE} -- Initialization
-
+feature -- Adding tests
 	make
-			-- Initialization for `Current'.
 		do
-	--		add_test (create {TEST_ARRAYED_CONTAINER}.make)
-	
-
+			add_boolean_case (agent test_thing)
 		end
 feature --Test cases
 

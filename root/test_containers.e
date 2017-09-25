@@ -20,6 +20,7 @@ feature -- Adding test classes.
 			ac: ARRAYED_CONTAINER
 		do
 			add_test (create {TEST_ARRAY_COPIES}.make)
+			add_test(create{TEST_ARRAYED_CONTAINER}.make)
 
 			show_browser
 			run_espec
