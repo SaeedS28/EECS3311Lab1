@@ -179,10 +179,10 @@ feature -- Queries
 		require
 		valid_index (i)
 		do
-		Result := imp.item (i)
+		Result := imp[i]
 
 		ensure
-			size_unchanged:Result = (imp.count ~ old imp.twin.count)
+			size_unchanged:Result = (imp.count) = (old imp.twin).count
 			result_correct: Result = (imp.item (i) = imp.item (i))
 			no_elements_changed:
 			across
