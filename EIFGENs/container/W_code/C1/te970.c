@@ -10,9 +10,9 @@
 extern "C" {
 #endif
 
-extern void F970_7235(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F970_7236(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F970_7237(EIF_REFERENCE);
+extern void F970_7232(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F970_7233(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F970_7234(EIF_REFERENCE);
 extern void EIF_Minit970(void);
 extern EIF_REFERENCE _A970_77();
 extern EIF_REFERENCE _A970_78();
@@ -37,7 +37,7 @@ extern "C" {
 #endif
 
 /* {TEST_ARRAY_COPIES}.make */
-void F970_7235 (EIF_REFERENCE Current)
+void F970_7232 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -61,12 +61,12 @@ void F970_7235 (EIF_REFERENCE Current)
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 969, Current, 0, 0, 13492);
+	RTEAA(l_feature_name, 969, Current, 0, 0, 13489);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(969, Current, 13492);
+	RTDBGEAA(969, Current, 13489);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	{
@@ -86,7 +86,7 @@ void F970_7235 (EIF_REFERENCE Current)
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(dftype, typarr0)));
-		tr2 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A970_77, (EIF_POINTER)(0),5054, 0, 0, 1, -1, tr1, 0);
+		tr2 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A970_77, (EIF_POINTER)(0),5051, 0, 0, 1, -1, tr1, 0);
 	}
 	ur1 = RTCCL(tr2);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5021, dtype))(Current, ur1x);
@@ -108,7 +108,7 @@ void F970_7235 (EIF_REFERENCE Current)
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(dftype, typarr0)));
-		tr2 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A970_78, (EIF_POINTER)(0),5055, 0, 0, 1, -1, tr1, 0);
+		tr2 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A970_78, (EIF_POINTER)(0),5052, 0, 0, 1, -1, tr1, 0);
 	}
 	ur1 = RTCCL(tr2);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5021, dtype))(Current, ur1x);
@@ -124,7 +124,7 @@ void F970_7235 (EIF_REFERENCE Current)
 }
 
 /* {TEST_ARRAY_COPIES}.test_array_ref_copy */
-EIF_TYPED_VALUE F970_7236 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F970_7233 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "test_array_ref_copy";
@@ -166,12 +166,12 @@ EIF_TYPED_VALUE F970_7236 (EIF_REFERENCE Current)
 	RTLU(SK_REF, &loc2);
 	RTLU(SK_REF, &loc3);
 	
-	RTEAA(l_feature_name, 969, Current, 3, 0, 13493);
+	RTEAA(l_feature_name, 969, Current, 3, 0, 13490);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(969, Current, 13493);
+	RTDBGEAA(969, Current, 13490);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = RTMS_EX_H("Test of a reference copy.",25,1494941742);
@@ -299,7 +299,7 @@ EIF_TYPED_VALUE F970_7236 (EIF_REFERENCE Current)
 }
 
 /* {TEST_ARRAY_COPIES}.test_array_shallow_copy */
-EIF_TYPED_VALUE F970_7237 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F970_7234 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "test_array_shallow_copy";
@@ -344,12 +344,12 @@ EIF_TYPED_VALUE F970_7237 (EIF_REFERENCE Current)
 	RTLU(SK_REF, &loc3);
 	RTLU(SK_REF, &loc4);
 	
-	RTEAA(l_feature_name, 969, Current, 4, 0, 13494);
+	RTEAA(l_feature_name, 969, Current, 4, 0, 13491);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(969, Current, 13494);
+	RTDBGEAA(969, Current, 13491);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = RTMS_EX_H("Test of a shallow copy.",23,1772811054);

@@ -14,6 +14,7 @@ feature {NONE} -- Implementation of container via an array
 
 	imp : ARRAY[STRING]
 
+
 feature -- Constructors
 
 	make
@@ -21,10 +22,12 @@ feature -- Constructors
 		do
 			-- This implementation is correct, just given to you.
 			create {ARRAY[STRING]} imp.make_empty
+
 		ensure
 			--Checks to see if the container is empty
 			empty_container:
 				imp.is_empty
+
 		end
 
 
@@ -38,38 +41,57 @@ feature -- Commands
 			imp [i] := s
 			-- Uncomment this to produce a wrong implementation
 --			if i > 1 then
---				imp [1] := s
---			end
+--				imp [1] := s			
+--		end
 		ensure
+			--check the count is equal to the old count
 			size_unchanged: imp.count = (old imp.twin).count
+			--check the item assigned is equal to the inserted value
 			item_assigned: imp [i] ~ s
+		    --loop across and find out if they are all the same as the old copy
 			others_unchanged:
 				across
 					1 |..| imp.count as j
 				all
 					j.item /= i implies imp [j.item] ~ (old imp.twin) [j.item]
 				end
+
 		end
 
 	insert_at (i: INTEGER; s: STRING)
 			-- Insert value 's' into index 'i'.
 		require
-		valid_index (i)
+			valid_index (i)
+		local
+		k : INTEGER
 		do
+
+			from
+				k := imp.count
+			until
+				k < i
+			loop
+				imp.force (imp[k], k+1)
+				k:= k - 1
+			end
 			imp.force (s, i)
+
 		ensure
-			size_changed: imp.count = (old imp.twin.count+1)
-			inserted_at_i: imp.at (i) ~ s
+			--checks to make sure the size is equal to the old size incremented by one
+			size_changed: imp.count = (old imp.twin).count+1
+			-- checks it is inserted by using the at  qualitifer
+			inserted_at_i:  imp[i] ~ s
+			--loop across the left most part of the array and do the same logic as others_unchanged
 			left_half_the_same:
 			across
 			imp.lower |..| (i-1) as j
 			all
 			imp[j.item] ~ (old imp.twin)[j.item]
 			end
-
+			--loop across the right most part of the array and do the same logic as others_unchanged
 			right_half_the_same: true
             across
-          i  |..| (old imp.twin).upper as j
+       		  i  |..| (old imp.twin).upper as j
             all
              imp[j.item+1]~(old imp.twin)[j.item]
             end
@@ -100,7 +122,7 @@ feature -- Commands
 			end
 			right_half_the_same:
 			across
-         	 i  |..| ((old imp.twin).upper-1) as j
+         	 i  |..| (imp.upper) as j
             all
              imp[j.item-1]~(old imp.twin)[j.item]
             end
@@ -126,7 +148,7 @@ feature -- Commands
 		require
 			--not empty
 		do
-			imp.remove_head (1)
+			imp.remove_head (1)--change this
 		ensure
 			size_changed: (imp.count < old imp.twin.count)
 			others_unchanged:
@@ -160,10 +182,10 @@ feature -- Queries
 
 		ensure
 			size_unchanged:
-			Result = (imp.count = old imp.twin.count)
+			(imp.count = old imp.twin.count)
 
 			result_correct:
-			Result = (imp.lower <= i and  i <= imp.upper)
+		(imp.lower <= i and  i <= imp.upper)
 
 			no_elements_changed:
 			across
@@ -177,13 +199,13 @@ feature -- Queries
 	get_at (i: INTEGER): STRING
 			-- Return the element stored at index 'i'.
 		require
-		valid_index (i)
+	valid_index:	valid_index (i)
 		do
 		Result := imp[i]
 
 		ensure
-			size_unchanged:Result = (imp.count) = (old imp.twin).count
-			result_correct: Result = (imp.item (i) = imp.item (i))
+			size_unchanged: (imp.count) = (old imp.twin).count
+			result_correct:  (imp[i] = imp[i])
 			no_elements_changed:
 			across
 			old imp.twin.lower |..| old imp.twin.upper	as j

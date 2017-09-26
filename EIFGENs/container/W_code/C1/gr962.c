@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern void F962_7726(EIF_REFERENCE, int);
+extern void F962_7723(EIF_REFERENCE, int);
 extern void EIF_Minit962(void);
 
 #ifdef __cplusplus
@@ -33,7 +33,7 @@ extern "C" {
 #endif
 
 /* {GROUP_ELEMENT}._invariant */
-void F962_7726 (EIF_REFERENCE Current, int where)
+void F962_7723 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -59,7 +59,7 @@ void F962_7726 (EIF_REFERENCE Current, int where)
 	RTLIU(4);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 961, Current, 0, 7725);
+	RTEAINV(l_feature_name, 961, Current, 0, 7722);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("neutral_addition", Current);

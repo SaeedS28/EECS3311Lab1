@@ -22500,8 +22500,8 @@ g_atype974_1,
 
 static const int32 cn_attr974 [] =
 {
-5076,
-5075,
+5073,
+5072,
 };
 
 extern const char *names977[];
@@ -22524,8 +22524,8 @@ g_atype977_1,
 
 static const int32 cn_attr977 [] =
 {
-5109,
-5110,
+5106,
+5107,
 };
 
 extern const char *names980[];
@@ -22563,13 +22563,13 @@ g_atype980_6,
 
 static const int32 cn_attr980 [] =
 {
-5152,
-5153,
-5154,
-5156,
+5149,
 5150,
 5151,
-5155,
+5153,
+5147,
+5148,
+5152,
 };
 
 extern const char *names981[];
@@ -22610,14 +22610,14 @@ g_atype981_7,
 
 static const int32 cn_attr981 [] =
 {
-5152,
-5153,
-5154,
-5156,
-5158,
+5149,
 5150,
 5151,
+5153,
 5155,
+5147,
+5148,
+5152,
 };
 
 extern const char *names982[];
@@ -22655,13 +22655,13 @@ g_atype982_6,
 
 static const int32 cn_attr982 [] =
 {
-5152,
-5153,
-5154,
-5156,
+5149,
 5150,
 5151,
-5155,
+5153,
+5147,
+5148,
+5152,
 };
 
 extern const char *names984[];
@@ -22687,9 +22687,9 @@ g_atype984_2,
 
 static const int32 cn_attr984 [] =
 {
-5192,
-5204,
-5205,
+5189,
+5201,
+5202,
 };
 
 extern const char *names985[];
@@ -22718,10 +22718,10 @@ g_atype985_3,
 
 static const int32 cn_attr985 [] =
 {
-5208,
-5220,
-5221,
-5222,
+5205,
+5217,
+5218,
+5219,
 };
 
 extern const char *names986[];
@@ -22747,9 +22747,9 @@ g_atype986_2,
 
 static const int32 cn_attr986 [] =
 {
-5240,
-5241,
-5239,
+5237,
+5238,
+5236,
 };
 
 extern const char *names988[];
@@ -22793,15 +22793,15 @@ g_atype988_8,
 
 static const int32 cn_attr988 [] =
 {
-5251,
-5254,
 5248,
+5251,
+5245,
+5246,
 5249,
+5250,
 5252,
 5253,
-5255,
-5256,
-5257,
+5254,
 };
 
 extern const char *names989[];
@@ -22821,7 +22821,7 @@ g_atype989_0,
 
 static const int32 cn_attr989 [] =
 {
-5283,
+5280,
 };
 
 extern const char *names991[];
@@ -22859,13 +22859,13 @@ g_atype991_6,
 
 static const int32 cn_attr991 [] =
 {
-5299,
-5318,
+5296,
+5315,
+5316,
 5319,
-5322,
-5306,
-5320,
-5301,
+5303,
+5317,
+5298,
 };
 
 extern const char *names992[];
@@ -22885,7 +22885,7 @@ g_atype992_0,
 
 static const int32 cn_attr992 [] =
 {
-5283,
+5280,
 };
 
 extern const char *names993[];
@@ -22905,7 +22905,7 @@ g_atype993_0,
 
 static const int32 cn_attr993 [] =
 {
-5283,
+5280,
 };
 
 extern const char *names994[];
@@ -22928,8 +22928,8 @@ g_atype994_1,
 
 static const int32 cn_attr994 [] =
 {
-5076,
-5075,
+5073,
+5072,
 };
 
 extern const char *names995[];
@@ -22952,8 +22952,8 @@ g_atype995_1,
 
 static const int32 cn_attr995 [] =
 {
-5076,
-5075,
+5073,
+5072,
 };
 
 extern const char *names996[];
@@ -22979,9 +22979,9 @@ g_atype996_2,
 
 static const int32 cn_attr996 [] =
 {
-5076,
-5283,
-5075,
+5073,
+5280,
+5072,
 };
 
 extern const char *names997[];
@@ -23046,22 +23046,22 @@ g_atype997_15,
 
 static const int32 cn_attr997 [] =
 {
-5396,
-5421,
-5422,
-5423,
-5424,
-5404,
-5076,
-5283,
-5415,
-5416,
-5417,
+5393,
 5418,
 5419,
-5425,
-5075,
 5420,
+5421,
+5401,
+5073,
+5280,
+5412,
+5413,
+5414,
+5415,
+5416,
+5422,
+5072,
+5417,
 };
 
 extern const char *names998[];
@@ -23093,11 +23093,11 @@ g_atype998_4,
 
 static const int32 cn_attr998 [] =
 {
-5109,
-5110,
-5076,
-5283,
-5075,
+5106,
+5107,
+5073,
+5280,
+5072,
 };
 
 extern const char *names999[];
@@ -23120,8 +23120,8 @@ g_atype999_1,
 
 static const int32 cn_attr999 [] =
 {
-5160,
-5161,
+5157,
+5158,
 };
 
 const struct cnode egc_fsystem_init[] = {

@@ -20,7 +20,7 @@ feature -- Adding tests
 			add_boolean_case (agent test_count)
 			add_boolean_case (agent test_insert_last)
 			add_boolean_case (agent test_insert_at)
-			add_boolean_case (agent test_delete_at)
+		--	add_boolean_case (agent test_delete_at)
 
 		end
 feature --Test cases
@@ -64,9 +64,10 @@ test_count: BOOLEAN
 			comment("T3: Test the insert at procedure ")
 	create {ARRAYED_CONTAINER} imp.make
 			imp.insert_last("Joe")
-			imp.insert_last("Joe")
-			imp.insert_last("Joe")
+			imp.insert_last("moe")
+			imp.insert_last("floe")
 			imp.insert_at (2,"BigLips")
+
 			result := "BigLips" ~ imp.get_at (2)
 
 			check result end
@@ -86,4 +87,5 @@ test_count: BOOLEAN
 
 					check result end
 					end
+
 end
