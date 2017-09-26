@@ -177,13 +177,13 @@ feature -- Queries
 	get_at (i: INTEGER): STRING
 			-- Return the element stored at index 'i'.
 		require
-		valid_index (i)
+		valid_index: valid_index (i)
+
 		do
 		Result := imp[i]
-
 		ensure
-			size_unchanged:Result = (imp.count) = (old imp.twin).count
-			result_correct: Result = (imp.item (i) = imp.item (i))
+			size_unchanged:(imp.count) = (old imp.twin).count
+			result_correct: Result = imp[i]
 			no_elements_changed:
 			across
 			old imp.twin.lower |..| old imp.twin.upper	as j
@@ -191,7 +191,6 @@ feature -- Queries
 				imp[j.item]~ (old imp.twin)[j.item]
 			end
 		end
-
 invariant
 	-- Size of container and size of implementation array always match.
 	consistency: imp.count = count
