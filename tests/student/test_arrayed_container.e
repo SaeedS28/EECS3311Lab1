@@ -20,7 +20,7 @@ feature -- Adding tests
 			add_boolean_case (agent test_count)
 			add_boolean_case (agent test_insert_last)
 			add_boolean_case (agent test_insert_at)
-		--	add_boolean_case (agent test_delete_at)
+			add_boolean_case (agent test_delete_at)
 
 		end
 feature --Test cases
@@ -80,11 +80,14 @@ test_count: BOOLEAN
 					comment("T4: Test the delete at procedure ")
 			create {ARRAYED_CONTAINER} imp.make
 					imp.insert_last("JohnCena")
-					imp.insert_last("Jimozine")
+					imp.insert_last("GetsDeleted")
 					imp.insert_last("Jimbo")
-					imp.delete_at (2)
-					result := "Jimbo" ~ imp.get_at (2)
+					imp.insert_last("Nirple")
+					imp.insert_last ("makeItStop")
 
+					imp.delete_at (2)
+					result :=
+						imp.get_at (3) ~ "Nirple"
 					check result end
 					end
 
