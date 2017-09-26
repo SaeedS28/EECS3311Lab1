@@ -10,94 +10,31 @@ class
 inherit
 	ES_TEST
 
+
 create
 	make
-
 feature -- Adding tests
 	make
 		do
+
 			add_boolean_case (agent test_thing)
+		--	add_boolean_case (agent test_insert_last)
+
 		end
 feature --Test cases
 
 test_thing : BOOLEAN
 		-- What the test does
 		local
-			imp : ARRAY[STRING]
+			imp : ARRAYED_CONTAINER
 		do
 			comment("T1: Test make procedure ")
-	create {ARRAY[STRING]} imp.make_empty
-			imp.force ("Alan", 1)
-			imp.force ("Mark", 2)
-			imp.force ("Tom", 3)
-			Result := imp.count > 1
+	create {ARRAYED_CONTAINER} imp.make
+			imp.insert_last("Joe")
+			imp.insert_last("Jim")
+			imp.insert_last ("Jemima")
+			Result := imp.count ~ 3
 			end
 
-test_thing2 : BOOLEAN
-		-- What the test does
-		local
-			imp : ARRAY[STRING]
-		do
-			comment("T2: test assign at follows post conditions ")
-	--		create imp.make(1,5)
-			Result := TRUE
-			end
-test_thing3 : BOOLEAN
-		-- What the test does
-		local
-			imp : ARRAY[STRING]
-		do
-			comment("T3: test assign at follows pre conditions ")
-	--		create imp.make(1,5)
-			Result := TRUE
-			end
-test_thing4 : BOOLEAN
-		-- What the test does
-		local
-			imp : ARRAY[STRING]
-		do
-			comment("T4:Test insert at post condition ")
-create {ARRAY[STRING]} imp.make_empty
-			imp.force ("Alan", 1)
-			imp.force ("Mark", 2)
-			imp.force ("Tom", 3)
-			Result := TRUE
-			end
-test_thing5 : BOOLEAN
-		-- What the test does
-		local
-			imp : ARRAY[STRING]
-		do
-			comment("T5: test delete at's post condition ")
-create {ARRAY[STRING]} imp.make_empty
-			imp.force ("Alan", 1)
-			imp.force ("Mark", 2)
-			imp.force ("Tom", 3)
-			Result := TRUE
-			end
-			test_thing6 : BOOLEAN
-		-- What the test does
-		local
-			imp : ARRAY[STRING]
-		do
-			comment("T6: test Insert last post condition ")
-create {ARRAY[STRING]} imp.make_empty
-			imp.force ("Alan", 1)
-			imp.force ("Mark", 2)
-			imp.force ("Tom", 3)
-			Result := TRUE
-			end
-			test_thing7 : BOOLEAN
-			-- What the test does
-			local
-				imp : ARRAY[STRING]
-			do
-				comment("T7: Testing remove first postcondition ")
-create {ARRAY[STRING]} imp.make_empty
-			imp.force ("Alan", 1)
-			imp.force ("Mark", 2)
-			imp.force ("Tom", 3)
-			print(imp)
-				Result := TRUE
-				end
+
 end
