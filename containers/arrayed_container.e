@@ -146,9 +146,19 @@ feature -- Commands
 	remove_first
 			-- Remove first element from the container.
 		require
-			--not empty
+			 not_empty : (count > 0)--not empty
+		local
+			i : INTEGER
 		do
-			imp.remove_head (1)--change this
+			from
+				i:=imp.lower
+			until
+				i=imp.count
+			loop
+				imp[i]:=imp[i+1]	--rewrites the first value
+				i:=i+1
+end
+			imp.remove_tail (1)--change this
 		ensure
 			size_changed: (imp.count < old imp.twin.count)
 			others_unchanged:

@@ -21,9 +21,12 @@ feature -- Adding tests
 			add_boolean_case (agent test_insert_last)
 			add_boolean_case (agent test_insert_at)
 			add_boolean_case (agent test_delete_at)
+			add_boolean_case (agent test_remove_first)
+			add_violation_case_with_tag("item_assigned", agent test_assign_at_post)
+			add_violation_case_with_tag("size_changed", agent test_delete_at_post)
 
 		end
-feature --Test cases
+feature --Test boolean cases
 
 test_count: BOOLEAN
 		-- This one just tests the basic creation and function of the container
@@ -90,5 +93,62 @@ test_count: BOOLEAN
 						imp.get_at (3) ~ "Nirple"
 					check result end
 					end
+		test_remove_first: BOOLEAN
+				-- Tests the delete first procedure
+				local
+					imp : ARRAYED_CONTAINER
+				do
+					comment("T5: Test the delete first procedure ")
+			create {ARRAYED_CONTAINER} imp.make
+					imp.insert_last("GetsDeleted")
+					imp.insert_last("JohnCena")
+					imp.insert_last("Jimbo")
+					imp.insert_last("Nirple")
+					imp.insert_last ("makeItStop")
+
+					imp.remove_first
+					imp.remove_first
+					result :=
+						imp.count = 3
+					check result end
+end
+feature --test violation cases
+test_assign_at_post
+--test the proper assignment post condition
+	local
+		imp: BAD_ASSIGN_AT
+	do
+		comment ("T6: Make the post condition on assign at fail for the second post condition")
+		create imp.make
+		imp.insert_last ("Munder")
+		imp.insert_last ("BoBunder")
+		imp.insert_last("flunder")
+		imp.assign_at (2, "plzfail")
+end
+test_delete_at_post
+--test the proper assignment post condition
+	local
+		imp: BAD_DELETE_AT
+	do
+		comment ("T7: Make the post condition on delete at fail for the first post condition")
+		create imp.make
+		imp.insert_last ("Munder")
+		imp.insert_last ("BoBunder")
+		imp.insert_last("flunder")
+		imp.delete_at (2)
+end
+test_insert_at_post
+--test the proper assignment post condition
+	local
+		imp: BAD_INSERT_AT
+	do
+		comment ("T8: Make the post condition on insert at fail for the first post condition")
+		create imp.make
+		imp.insert_last ("Munder")
+		imp.insert_last ("BoBunder")
+		imp.insert_last("flunder")
+		imp.insert_at(1,"fidgetspinner")
+end
+
 
 end
