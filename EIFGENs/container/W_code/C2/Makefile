@@ -2,13 +2,13 @@ INCLUDE_PATH =  -I"$(ISE_LIBRARY)/library/time/spec/include"
 SHELL = /bin/sh
 CC = gcc
 CPP = g++
-CFLAGS = -O0 -pipe -fPIC -D_GNU_SOURCE -m64 -DEIF_THREADS -DEIF_LINUXTHREADS  -DEIF_IEEE_BEHAVIOR -DWORKBENCH -I"/cs/local/packages/Eiffel17.05/studio/spec/linux-x86-64/include" -I. $(INCLUDE_PATH)
-CPPFLAGS = -O0 -pipe -fPIC -D_GNU_SOURCE -m64 -DEIF_THREADS -DEIF_LINUXTHREADS  -DWORKBENCH -I"/cs/local/packages/Eiffel17.05/studio/spec/linux-x86-64/include" -I. $(INCLUDE_PATH)
+CFLAGS = -O0 -pipe -fPIC -D_GNU_SOURCE -m64 -DEIF_THREADS -DEIF_LINUXTHREADS  -DEIF_IEEE_BEHAVIOR -DWORKBENCH -I"/usr/include/eiffelstudio-17.05" -I. $(INCLUDE_PATH)
+CPPFLAGS = -O0 -pipe -fPIC -D_GNU_SOURCE -m64 -DEIF_THREADS -DEIF_LINUXTHREADS  -DWORKBENCH -I"/usr/include/eiffelstudio-17.05" -I. $(INCLUDE_PATH)
 LDFLAGS = -m elf_x86_64
 CCLDFLAGS = -m64  
 LDSHAREDFLAGS =  -m elf_x86_64 -shared -o
-EIFLIB = "/cs/local/packages/Eiffel17.05/studio/spec/linux-x86-64/lib/libmtwkbench.a"
-EIFTEMPLATES = /cs/local/packages/Eiffel17.05/studio/config/linux-x86-64/templates
+EIFLIB = "/usr/lib/eiffelstudio-17.05/libmtwkbench.a"
+EIFTEMPLATES = /usr/share/eiffelstudio-17.05/studio/config/unix/templates
 LIBS = -lm -lpthread
 MAKE = make
 AR = ar
@@ -20,7 +20,7 @@ RANLIB = :
 RM = /bin/rm -f
 FILE_EXIST = 
 RMDIR = 
-X2C = "/cs/local/packages/Eiffel17.05/studio/spec/linux-x86-64/bin/x2c"
+X2C = "/usr/lib/eiffelstudio-17.05/studio/x2c"
 SHAREDLINK = ld
 SHAREDLIBS = -lm
 SHARED_SUFFIX = .so
@@ -40,9 +40,10 @@ SYSTEM_IN_DYNAMIC_LIB = container.so
 
 OBJECTS = big_file_C2_c.o 
 
-OLDOBJECTS =  ti995.o ti995d.o da993.o da993d.o da991.o da991d.o ti994.o ti994d.o \
-	da998.o da998d.o da992.o da992d.o da997.o da997d.o fi990.o fi990d.o \
-	in999.o in999d.o da996.o da996d.o 
+OLDOBJECTS =  da998.o da998d.o ti996.o ti996d.o da1001.o da1001d.o da994.o \
+	da994d.o ab990.o ab990d.o da992.o da992d.o da997.o da997d.o ti995.o \
+	ti995d.o da999.o da999d.o da991.o da991d.o da1000.o da1000d.o fi993.o \
+	fi993d.o in1002.o in1002d.o 
 
 all: Cobj2.o
 

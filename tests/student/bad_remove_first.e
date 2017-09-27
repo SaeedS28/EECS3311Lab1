@@ -20,9 +20,9 @@ feature -- bad versions of the methods that throw a post-condition violation
 	local
 		came_first: STRING
 	do
-		came_first := imp[1]
+
 		Precursor
-		imp[1] := came_first
+		imp[4] := "mistakes"
 	end
 
 end

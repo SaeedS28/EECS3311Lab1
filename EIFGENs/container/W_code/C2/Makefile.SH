@@ -55,9 +55,10 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C2_c.o 
 
-OLDOBJECTS =  ti995.o ti995d.o da993.o da993d.o da991.o da991d.o ti994.o ti994d.o \
-	da998.o da998d.o da992.o da992d.o da997.o da997d.o fi990.o fi990d.o \
-	in999.o in999d.o da996.o da996d.o 
+OLDOBJECTS =  da998.o da998d.o ti996.o ti996d.o da1001.o da1001d.o da994.o \
+	da994d.o ab990.o ab990d.o da992.o da992d.o da997.o da997d.o ti995.o \
+	ti995d.o da999.o da999d.o da991.o da991d.o da1000.o da1000d.o fi993.o \
+	fi993d.o in1002.o in1002d.o 
 
 all: Cobj2.o
 

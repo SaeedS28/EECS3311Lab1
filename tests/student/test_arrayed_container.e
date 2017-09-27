@@ -23,7 +23,9 @@ feature -- Adding tests
 			add_boolean_case (agent test_delete_at)
 			add_boolean_case (agent test_remove_first)
 			add_violation_case_with_tag("item_assigned", agent test_assign_at_post)
-			add_violation_case_with_tag("size_changed", agent test_delete_at_post)
+		--	add_violation_case_with_tag("size_changed", agent test_delete_at_post)
+		--	add_violation_case_with_tag("size_changed", agent test_insert_at_post)
+		--	add_violation_case_with_tag("others_unchanged", agent test_remove_first_post)
 
 		end
 feature --Test boolean cases
@@ -150,5 +152,19 @@ test_insert_at_post
 		imp.insert_at(1,"fidgetspinner")
 end
 
+
+test_remove_first_post
+--test the proper assignment post condition
+	local
+		imp: BAD_REMOVE_FIRST
+	do
+		comment ("T9: Make the post condition on insert at fail for the first post condition")
+		create imp.make
+		imp.insert_last ("Munder")
+		imp.insert_last ("BoBunder")
+		imp.insert_last("flunder")
+		imp.remove_first
+
+end
 
 end

@@ -65,7 +65,8 @@ feature -- Commands
 		local
 		k : INTEGER
 		do
-
+--loop through the array and push everything forward by 1,
+--starting from the top, then when you hit i force in the value wanted
 			from
 				k := imp.count
 			until
@@ -99,12 +100,12 @@ feature -- Commands
 
 	delete_at (i: INTEGER)
 			-- Delete element stored at index 'i'.
-
 		require
 		valid_index (i)
 	local
 			string_forward: STRING
 		do
+			-- itterate through the array shifting everything behind until it hits what is at i then it removes the tail
 			across
 			i |..| (imp.upper-1) as j
 			loop
@@ -114,12 +115,14 @@ feature -- Commands
 			imp.remove_tail (1)
 		ensure
 			size_changed: imp.count = (old imp.twin.count-1)
+			--just iterate and make sure left half is the same
 			left_half_the_same:
 			across
 			imp.lower |..| (i-1) as j
 			all
 			imp[j.item] ~ (old imp.twin)[j.item]
 			end
+			--itterate through and try to tell if the right half is the same
 			right_half_the_same:
 			across
          	 i  |..| imp.count as j
@@ -131,6 +134,7 @@ feature -- Commands
 	insert_last (s: STRING)
 			-- Insert 's' as the last element of the container.
 		do
+			--this is basically just using force at the end of the array
 		  imp.force (s, imp.upper+1)
 		ensure
 			size_changed: (imp.count > old imp.twin.count)
@@ -150,6 +154,7 @@ feature -- Commands
 		local
 			i : INTEGER
 		do
+			--this works just like the delete at, but does it for everything and removes the tail
 			from
 				i:=imp.lower
 			until
@@ -158,7 +163,7 @@ feature -- Commands
 				imp[i]:=imp[i+1]	--rewrites the first value
 				i:=i+1
 end
-			imp.remove_tail (1)--change this
+			imp.remove_tail (1)
 		ensure
 			size_changed: (imp.count < old imp.twin.count)
 			others_unchanged:
@@ -173,6 +178,7 @@ feature -- Queries
 --This feature uses the already given count to give the count of the array
 	count: INTEGER
 	do
+		--uses uniform access principle to give me back my count
 	Result := imp.count
 	ensure
 	Result = imp.upper-imp.lower+1
