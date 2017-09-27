@@ -122,9 +122,9 @@ feature -- Commands
 			end
 			right_half_the_same:
 			across
-         	 (i + 1)  |..| (imp.count-1) as j
+         	 i  |..| imp.count as j
             all
-             imp[j.item]~(old imp.twin)[j.item-1]
+             imp[j.item]~(old imp.twin)[j.item+1]
             end
 		end
 
