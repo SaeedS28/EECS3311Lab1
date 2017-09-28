@@ -65,7 +65,7 @@ void F966_7189 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = RTLN(eif_new_type(968, 0x01).id);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(5044, Dtype(tr1)))(tr1);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(5045, Dtype(tr1)))(tr1);
 	RTNHOOK(1,1);
 	ur1 = RTCCL(tr1);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5002, dtype))(Current, ur1x);

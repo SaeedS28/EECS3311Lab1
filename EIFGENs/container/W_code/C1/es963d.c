@@ -10,17 +10,17 @@ extern "C" {
 #endif
 
 static const EIF_TYPE_INDEX egt_0_963 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_963 [] = {0xFF01,245,962,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_963 [] = {0xFF01,244,962,0xFFFF};
 static const EIF_TYPE_INDEX egt_2_963 [] = {0xFF01,962,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_963 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_963 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_5_963 [] = {0xFF01,962,0xFFFF};
 static const EIF_TYPE_INDEX egt_6_963 [] = {0xFF01,962,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_963 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_8_963 [] = {0xFF01,16,0xFFFF};
+static const EIF_TYPE_INDEX egt_8_963 [] = {0xFF01,14,0xFFFF};
 static const EIF_TYPE_INDEX egt_9_963 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_963 [] = {0xFF01,231,0xFFFF};
-static const EIF_TYPE_INDEX egt_11_963 [] = {0xFF01,26,0xFFFF};
+static const EIF_TYPE_INDEX egt_11_963 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_963 [] = {0xFF01,962,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_963 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_963 [] = {0xFF01,231,0xFFFF};
@@ -28,21 +28,21 @@ static const EIF_TYPE_INDEX egt_15_963 [] = {0xFF01,182,0xFFFF};
 static const EIF_TYPE_INDEX egt_16_963 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_17_963 [] = {0xFF01,231,0xFFFF};
 static const EIF_TYPE_INDEX egt_18_963 [] = {0xFF01,182,0xFFFF};
-static const EIF_TYPE_INDEX egt_19_963 [] = {0xFF01,434,0xFF01,966,0xFFFF};
+static const EIF_TYPE_INDEX egt_19_963 [] = {0xFF01,323,0xFF01,966,0xFFFF};
 
 
 static const struct desc_info desc_963[] = {
 	{EIF_GENERIC(NULL), 0xFFFFFFFF, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_0_963), 0, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_1_963), 1, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018F /*199*/), 2, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018F /*199*/), 3, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018F /*199*/), 4, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018F /*199*/), 5, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018F /*199*/), 6, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018F /*199*/), 7, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018F /*199*/), 8, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018F /*199*/), 9, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 2, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 3, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 4, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 5, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 6, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 7, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 8, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 9, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_2_963), 10, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 11, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 12, 0xFFFFFFFF},
@@ -65,7 +65,7 @@ static const struct desc_info desc_963[] = {
 	{EIF_NON_GENERIC(0x01C5 /*226*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_963), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 13387, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x018F /*199*/), 13388, 32},
+	{EIF_NON_GENERIC(0x0195 /*202*/), 13388, 32},
 	{EIF_GENERIC(NULL), 13389, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 13390, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 13391, 0xFFFFFFFF},
@@ -100,8 +100,8 @@ void Init963(void)
 {
 	IDSC(desc_963, 0, 962);
 	IDSC(desc_963 + 1, 1, 962);
-	IDSC(desc_963 + 32, 369, 962);
-	IDSC(desc_963 + 60, 364, 962);
+	IDSC(desc_963 + 32, 370, 962);
+	IDSC(desc_963 + 60, 365, 962);
 }
 
 

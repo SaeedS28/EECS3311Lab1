@@ -22,7 +22,7 @@ feature -- bad versions of the methods that throw a post-condition violation
 	do
 
 		Precursor
-		imp[4] := "mistakes"
+		imp[1] := "mistakes"
 	end
 
 end

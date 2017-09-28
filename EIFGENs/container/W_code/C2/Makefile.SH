@@ -11,7 +11,7 @@ case "$O" in
 esac
 echo "Compiling C code in C2"
 $spitshell >Makefile <<!GROK!THIS!
-INCLUDE_PATH =  -I"\$(ISE_LIBRARY)/library/time/spec/include"
+INCLUDE_PATH =  -I"\$(ISE_LIBRARY)\library\time\spec\include"
 SHELL = /bin/sh
 CC = $cc
 CPP = $cpp
@@ -55,10 +55,10 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C2_c.o 
 
-OLDOBJECTS =  da998.o da998d.o ti996.o ti996d.o da1001.o da1001d.o da994.o \
-	da994d.o ab990.o ab990d.o da992.o da992d.o da997.o da997d.o ti995.o \
-	ti995d.o da999.o da999d.o da991.o da991d.o da1000.o da1000d.o fi993.o \
-	fi993d.o in1002.o in1002d.o 
+OLDOBJECTS =  da999.o da999d.o ti997.o ti997d.o da995.o da995d.o da990.o da990d.o \
+	da1002.o da1002d.o ab991.o ab991d.o da993.o da993d.o da998.o da998d.o \
+	ti996.o ti996d.o da992.o da992d.o da1001.o da1001d.o fi994.o fi994d.o \
+	da1000.o da1000d.o in1003.o in1003d.o 
 
 all: Cobj2.o
 

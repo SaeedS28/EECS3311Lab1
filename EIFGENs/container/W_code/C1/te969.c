@@ -10,9 +10,9 @@
 extern "C" {
 #endif
 
-extern void F969_7226(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F969_7227(EIF_REFERENCE);
+extern void F969_7227(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F969_7228(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F969_7229(EIF_REFERENCE);
 extern void EIF_Minit969(void);
 extern EIF_REFERENCE _A969_78();
 extern EIF_REFERENCE _A969_77();
@@ -37,7 +37,7 @@ extern "C" {
 #endif
 
 /* {TEST_ARRAY_COPIES}.make */
-void F969_7226 (EIF_REFERENCE Current)
+void F969_7227 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -61,12 +61,12 @@ void F969_7226 (EIF_REFERENCE Current)
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 968, Current, 0, 0, 13482);
+	RTEAA(l_feature_name, 968, Current, 0, 0, 13483);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(968, Current, 13482);
+	RTDBGEAA(968, Current, 13483);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	{
@@ -81,12 +81,12 @@ void F969_7226 (EIF_REFERENCE Current)
 	RTAR(tr1,Current);
 	
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,293,0xFF01,0xFFF9,0,185,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,370,0xFF01,0xFFF9,0,185,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(dftype, typarr0)));
-		tr2 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A969_77, (EIF_POINTER)(0),5045, 0, 0, 1, -1, tr1, 0);
+		tr2 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A969_77, (EIF_POINTER)(0),5046, 0, 0, 1, -1, tr1, 0);
 	}
 	ur1 = RTCCL(tr2);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5011, dtype))(Current, ur1x);
@@ -103,12 +103,12 @@ void F969_7226 (EIF_REFERENCE Current)
 	RTAR(tr1,Current);
 	
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,293,0xFF01,0xFFF9,0,185,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,370,0xFF01,0xFFF9,0,185,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(dftype, typarr0)));
-		tr2 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A969_78, (EIF_POINTER)(0),5046, 0, 0, 1, -1, tr1, 0);
+		tr2 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A969_78, (EIF_POINTER)(0),5047, 0, 0, 1, -1, tr1, 0);
 	}
 	ur1 = RTCCL(tr2);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5011, dtype))(Current, ur1x);
@@ -124,7 +124,7 @@ void F969_7226 (EIF_REFERENCE Current)
 }
 
 /* {TEST_ARRAY_COPIES}.test_array_ref_copy */
-EIF_TYPED_VALUE F969_7227 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F969_7228 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "test_array_ref_copy";
@@ -166,21 +166,21 @@ EIF_TYPED_VALUE F969_7227 (EIF_REFERENCE Current)
 	RTLU(SK_REF, &loc2);
 	RTLU(SK_REF, &loc3);
 	
-	RTEAA(l_feature_name, 968, Current, 3, 0, 13483);
+	RTEAA(l_feature_name, 968, Current, 3, 0, 13484);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(968, Current, 13483);
+	RTDBGEAA(968, Current, 13484);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = RTMS_EX_H("Test of a reference copy.",25,1494941742);
 	ur1 = tr1;
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5016, dtype))(Current, ur1x);
 	RTHOOK(2);
-	RTDBGAL(Current, 1, 0xF800012B, 0, 0); /* loc1 */
+	RTDBGAL(Current, 1, 0xF8000107, 0, 0); /* loc1 */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,299,0xFF01,231,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,263,0xFF01,231,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -237,7 +237,7 @@ EIF_TYPED_VALUE F969_7227 (EIF_REFERENCE Current)
 		}
 	}
 	RTHOOK(8);
-	RTDBGAL(Current, 2, 0xF800012B, 0, 0); /* loc2 */
+	RTDBGAL(Current, 2, 0xF8000107, 0, 0); /* loc2 */
 	loc2 = (EIF_REFERENCE) RTCCL(loc1);
 	RTHOOK(9);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
@@ -259,7 +259,7 @@ EIF_TYPED_VALUE F969_7227 (EIF_REFERENCE Current)
 	RTHOOK(12);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
 	RTHOOK(13);
-	RTDBGAL(Current, 1, 0xF80001C0, 0, 0); /* loc3 */
+	RTDBGAL(Current, 1, 0xF8000157, 0, 0); /* loc3 */
 	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1758, "count", loc1))(loc1)).it_i4);
 	ui4_1 = ti4_1;
 	tr1 = RTLN(eif_new_type(217, 0x00).id);
@@ -299,7 +299,7 @@ EIF_TYPED_VALUE F969_7227 (EIF_REFERENCE Current)
 }
 
 /* {TEST_ARRAY_COPIES}.test_array_shallow_copy */
-EIF_TYPED_VALUE F969_7228 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F969_7229 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "test_array_shallow_copy";
@@ -344,21 +344,21 @@ EIF_TYPED_VALUE F969_7228 (EIF_REFERENCE Current)
 	RTLU(SK_REF, &loc3);
 	RTLU(SK_REF, &loc4);
 	
-	RTEAA(l_feature_name, 968, Current, 4, 0, 13484);
+	RTEAA(l_feature_name, 968, Current, 4, 0, 13485);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(968, Current, 13484);
+	RTDBGEAA(968, Current, 13485);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = RTMS_EX_H("Test of a shallow copy.",23,1772811054);
 	ur1 = tr1;
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5016, dtype))(Current, ur1x);
 	RTHOOK(2);
-	RTDBGAL(Current, 1, 0xF800012B, 0, 0); /* loc1 */
+	RTDBGAL(Current, 1, 0xF8000107, 0, 0); /* loc1 */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,299,0xFF01,231,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,263,0xFF01,231,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -415,7 +415,7 @@ EIF_TYPED_VALUE F969_7228 (EIF_REFERENCE Current)
 		}
 	}
 	RTHOOK(8);
-	RTDBGAL(Current, 2, 0xF800012B, 0, 0); /* loc2 */
+	RTDBGAL(Current, 2, 0xF8000107, 0, 0); /* loc2 */
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(17, "twin", loc1))(loc1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	loc2 = (EIF_REFERENCE) RTCCL(tr1);
 	RTHOOK(9);
@@ -438,7 +438,7 @@ EIF_TYPED_VALUE F969_7228 (EIF_REFERENCE Current)
 	RTHOOK(12);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
 	RTHOOK(13);
-	RTDBGAL(Current, 1, 0xF80001C0, 0, 0); /* loc3 */
+	RTDBGAL(Current, 1, 0xF8000157, 0, 0); /* loc3 */
 	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1758, "count", loc1))(loc1)).it_i4);
 	ui4_1 = ti4_1;
 	tr1 = RTLN(eif_new_type(217, 0x00).id);
@@ -475,7 +475,7 @@ EIF_TYPED_VALUE F969_7228 (EIF_REFERENCE Current)
 	RTHOOK(17);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
 	RTHOOK(18);
-	RTDBGAL(Current, 2, 0xF80001C0, 0, 0); /* loc4 */
+	RTDBGAL(Current, 2, 0xF8000157, 0, 0); /* loc4 */
 	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1758, "count", loc1))(loc1)).it_i4);
 	ui4_1 = ti4_1;
 	tr1 = RTLN(eif_new_type(217, 0x00).id);

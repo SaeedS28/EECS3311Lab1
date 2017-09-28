@@ -16,26 +16,38 @@ create
 feature -- Adding tests
 	make
 		do
-
+			add_boolean_case (agent test_make)
 			add_boolean_case (agent test_count)
 			add_boolean_case (agent test_insert_last)
 			add_boolean_case (agent test_insert_at)
 			add_boolean_case (agent test_delete_at)
 			add_boolean_case (agent test_remove_first)
 			add_violation_case_with_tag("item_assigned", agent test_assign_at_post)
-		--	add_violation_case_with_tag("size_changed", agent test_delete_at_post)
-		--	add_violation_case_with_tag("size_changed", agent test_insert_at_post)
-		--	add_violation_case_with_tag("others_unchanged", agent test_remove_first_post)
+			add_violation_case_with_tag("right_half_the_same", agent test_delete_at_post)
+		--	add_violation_case_with_tag("right_half_the_same", agent test_insert_at_post) fucked
+			add_violation_case_with_tag("others_unchanged", agent test_remove_first_post)
 
 		end
 feature --Test boolean cases
 
-test_count: BOOLEAN
+test_make: BOOLEAN
 		-- This one just tests the basic creation and function of the container
 		local
 			imp : ARRAYED_CONTAINER
 		do
-			comment("T1: Test make procedure ")
+			comment("T0: Test make procedure ")
+	create {ARRAYED_CONTAINER} imp.make
+			imp.insert_last("Joe")
+			imp.insert_last("Jim")
+			imp.insert_last ("Jemima")
+			Result := imp.count > 0
+			end
+			test_count: BOOLEAN
+		-- This one just tests the count feature
+		local
+			imp : ARRAYED_CONTAINER
+		do
+			comment("T1: Test count querie ")
 	create {ARRAYED_CONTAINER} imp.make
 			imp.insert_last("Joe")
 			imp.insert_last("Jim")

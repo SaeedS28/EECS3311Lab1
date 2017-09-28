@@ -1,36 +1,37 @@
-INCLUDE_PATH =  -I"$(ISE_LIBRARY)/library/time/spec/include"
+INCLUDE_PATH =  -I"D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL\library\time\spec\include"
 SHELL = /bin/sh
-CC = gcc
-CPP = g++
-CFLAGS = -O0 -pipe -fPIC -D_GNU_SOURCE -m64 -DEIF_THREADS -DEIF_LINUXTHREADS  -DEIF_IEEE_BEHAVIOR -DWORKBENCH -I"/usr/include/eiffelstudio-17.05" -I. $(INCLUDE_PATH)
-CPPFLAGS = -O0 -pipe -fPIC -D_GNU_SOURCE -m64 -DEIF_THREADS -DEIF_LINUXTHREADS  -DWORKBENCH -I"/usr/include/eiffelstudio-17.05" -I. $(INCLUDE_PATH)
-LDFLAGS = -m elf_x86_64
-CCLDFLAGS = -m64  
-LDSHAREDFLAGS =  -m elf_x86_64 -shared -o
-EIFLIB = "/usr/lib/eiffelstudio-17.05/libmtwkbench.a"
-EIFTEMPLATES = /usr/share/eiffelstudio-17.05/studio/config/unix/templates
-LIBS = -lm -lpthread
-MAKE = make
-AR = ar
-LD = ld
-MKDEP = \$(EIFFEL_SRC)/C/mkdep $(DPFLAGS) --
-MV = /bin/mv
-CP = /bin/cp
-RANLIB = :
-RM = /bin/rm -f
+CC = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/mingw/bin/gcc"
+CPP = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/mingw/bin/gcc"
+CFLAGS = -O0 -pipe -imacros eif_config.mingw.h -D_WIN32_WINNT=0x0500 -DWINVER=0x0500 -D_UNICODE -DUNICODE -DWIN32_LEAN_AND_MEAN  -DEIF_THREADS  -DEIF_IEEE_BEHAVIOR -DWORKBENCH -I"D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/studio/spec/win64/include" -I. $(INCLUDE_PATH)
+CPPFLAGS = -O0 -pipe -imacros eif_config.mingw.h -D_WIN32_WINNT=0x0500 -DWINVER=0x0500 -D_UNICODE -DUNICODE -DWIN32_LEAN_AND_MEAN  -DEIF_THREADS  -DWORKBENCH -I"D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/studio/spec/win64/include" -I. $(INCLUDE_PATH)
+LDFLAGS = 
+CCLDFLAGS =   -mconsole
+LDSHAREDFLAGS =  
+EIFLIB = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/studio/spec/win64/lib/mingw/mtwkbench.a"
+EIFTEMPLATES = D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/studio/config/win64/templates
+LIBS = 
+MAKE = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/msys/1.0/bin/make.exe"
+AR = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/mingw/bin/ar"
+LD = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/mingw/bin/ld"
+MKDEP =   --
+MV = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/msys/1.0/bin/cp"
+CP = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/msys/1.0/bin/cp"
+RANLIB = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/mingw/bin/ranlib.exe"
+RM = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/msys/1.0/bin/rm" -f
 FILE_EXIST = 
-RMDIR = 
-X2C = "/usr/lib/eiffelstudio-17.05/studio/x2c"
-SHAREDLINK = ld
-SHAREDLIBS = -lm
-SHARED_SUFFIX = .so
+RMDIR = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/msys/1.0/bin/rd"
+X2C = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/studio/spec/win64/bin/x2c.exe"
+SHAREDLINK = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/mingw/bin/dllwrap"
+SHAREDLIBS = -luser32 -lws2_32 -ladvapi32 -lgdi32 -lshell32 -lmsimg32 -lcomdlg32 -luuid -lole32 -loleaut32 -lcomctl32 -lmpr -lshlwapi -lwinspool -lstdc++ 
+SHARED_SUFFIX = .dll
 COMMAND_MAKEFILE = 
 START_TEST = if [ ! -f finished ] ; then 
 END_TEST = ; fi 
-CREATE_TEST = touch finished 
-SYSTEM_IN_DYNAMIC_LIB = container.so 
+CREATE_TEST = "D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/msys/1.0/bin/touch" finished
+PATH := D:\Program Files\Eiffel Software\EiffelStudio 17.05 GPL/gcc/win64/mingw/libexec/gcc/mingw32/3.4.2;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Users\tyler\AppData\Local\Microsoft\WindowsApps;C:\Users\tyler\AppData\Local\atom\bin;C:\Users\tyler\AppData\Local\Microsoft\WindowsApps;D:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files (x86)\Java\jre1.8.0_144\bin; 
+SYSTEM_IN_DYNAMIC_LIB = container.dll 
 
-.SUFFIXES:.cpp .o
+.SUFFIXES:.cpp .o 
 
 .c.o:
 	$(CC) $(CFLAGS) -c $<
@@ -41,20 +42,22 @@ SYSTEM_IN_DYNAMIC_LIB = container.so
 OBJECTS = big_file_C1_c.o 
 
 OLDOBJECTS =  te966.o te966d.o te969.o te969d.o te968.o te968d.o ar982.o ar982d.o \
-	es965.o es965d.o es967.o es967d.o ba985.o ba985d.o ba984.o ba984d.o \
-	ba983.o ba983d.o es963.o es963d.o es964.o es964d.o es979.o es979d.o \
-	es981.o es981d.o es980.o es980d.o es962.o es962d.o da989.o da989d.o \
-	c_958.o c_958d.o ti988.o ti988d.o ti974.o ti974d.o da987.o da987d.o \
-	da977.o da977d.o du986.o du986d.o da975.o da975d.o da978.o da978d.o \
-	ti973.o ti973d.o ti972.o ti972d.o da976.o da976d.o gr961.o gr961d.o \
-	ti971.o ti971d.o co970.o co970d.o da960.o da960d.o da959.o da959d.o 
+	es965.o es965d.o es967.o es967d.o ba986.o ba986d.o ba985.o ba985d.o \
+	ba984.o ba984d.o ba983.o ba983d.o es963.o es963d.o es964.o es964d.o \
+	es979.o es979d.o es981.o es981d.o es980.o es980d.o es962.o es962d.o \
+	c_958.o c_958d.o ti989.o ti989d.o ti974.o ti974d.o da975.o da975d.o \
+	da988.o da988d.o du987.o du987d.o da978.o da978d.o da977.o da977d.o \
+	ti973.o ti973d.o ti972.o ti972d.o ti971.o ti971d.o co970.o co970d.o \
+	da976.o da976d.o gr961.o gr961d.o da960.o da960d.o da959.o da959d.o 
 
-all: Cobj1.o
+all::  Cobj1.o
 
 Cobj1.o: $(OBJECTS) Makefile
-	$(LD) $(LDFLAGS) -r -o Cobj1.o $(OBJECTS)
-	$(RM) $(OBJECTS)
+	$(RM) $@
+	$(LD) -r -o $@ $(OBJECTS)
 	$(CREATE_TEST)
+	$(RM) $(OBJECTS)
+
 
 clean: local_clean
 clobber: local_clobber
