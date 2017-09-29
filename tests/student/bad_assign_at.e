@@ -1,4 +1,4 @@
-note
+mpnote
 	description: "Summary description for {BAD_ASSIGN_AT}."
 	author: "Tyler Noble"
 	date: "$Date$"
@@ -19,7 +19,7 @@ feature -- bad versions of the methods that throw a post-condition violation
 	assign_at (i: INTEGER; s: STRING)
 	do
 		Precursor (i,s)
-		imp[i]:="WrongAgain!"
+		imp[imp.count]:="WrongAgain!"
 	end
 
 end
