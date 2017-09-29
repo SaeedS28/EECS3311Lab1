@@ -90,8 +90,8 @@ feature -- Commands
 			imp[j.item] ~ (old imp.twin)[j.item]
 			end
 			--loop across the right most part of the array and do the same logic as others_unchanged
-			right_half_the_same: true
-            across
+			right_half_the_same:
+			across
        		  i  |..| (old imp.twin).upper as j
             all
              imp[j.item+1]~(old imp.twin)[j.item]
