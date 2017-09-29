@@ -22,7 +22,7 @@ feature -- Adding tests
 			add_boolean_case (agent test_insert_at)
 			add_boolean_case (agent test_delete_at)
 			add_boolean_case (agent test_remove_first)
-			add_violation_case_with_tag("item_assigned", agent test_assign_at_post)
+			add_violation_case_with_tag("others_unchanged", agent test_assign_at_post)
 			add_violation_case_with_tag("right_half_the_same", agent test_delete_at_post)
 		--	add_violation_case_with_tag("right_half_the_same", agent test_insert_at_post) fucked
 			add_violation_case_with_tag("others_unchanged", agent test_remove_first_post)
